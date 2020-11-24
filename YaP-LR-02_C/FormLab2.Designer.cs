@@ -244,11 +244,12 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.listBoxArgX);
             this.flowLayoutPanel1.Controls.Add(this.listBoxFuncX);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 230);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(472, 389);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(470, 386);
             this.flowLayoutPanel1.TabIndex = 19;
             // 
             // FormLab2
