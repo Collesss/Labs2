@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxArgX = new System.Windows.Forms.ListBox();
+            this.listBoxFuncX = new System.Windows.Forms.ListBox();
             this.labelText2X = new System.Windows.Forms.Label();
             this.textBoxA = new System.Windows.Forms.TextBox();
             this.buttonCalculate = new System.Windows.Forms.Button();
@@ -44,20 +44,22 @@
             this.labelText8M = new System.Windows.Forms.Label();
             this.textBoxMultiple = new System.Windows.Forms.TextBox();
             this.labelText3F = new System.Windows.Forms.Label();
-            this.listBoxFuncX = new System.Windows.Forms.ListBox();
+            this.listBoxArgX = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listBoxArgX
+            // listBoxFuncX
             // 
-            this.listBoxArgX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listBoxArgX.FormattingEnabled = true;
-            this.listBoxArgX.ItemHeight = 17;
-            this.listBoxArgX.Location = new System.Drawing.Point(16, 233);
-            this.listBoxArgX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBoxArgX.Name = "listBoxArgX";
-            this.listBoxArgX.Size = new System.Drawing.Size(227, 378);
-            this.listBoxArgX.TabIndex = 8;
+            this.listBoxFuncX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBoxFuncX.FormattingEnabled = true;
+            this.listBoxFuncX.ItemHeight = 17;
+            this.listBoxFuncX.Location = new System.Drawing.Point(239, 4);
+            this.listBoxFuncX.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxFuncX.Name = "listBoxFuncX";
+            this.listBoxFuncX.Size = new System.Drawing.Size(227, 378);
+            this.listBoxFuncX.TabIndex = 8;
             // 
             // labelText2X
             // 
@@ -74,7 +76,7 @@
             // 
             this.textBoxA.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxA.Location = new System.Drawing.Point(763, 23);
-            this.textBoxA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(132, 24);
             this.textBoxA.TabIndex = 1;
@@ -83,7 +85,7 @@
             // 
             this.buttonCalculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonCalculate.Location = new System.Drawing.Point(621, 500);
-            this.buttonCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalculate.Name = "buttonCalculate";
             this.buttonCalculate.Size = new System.Drawing.Size(133, 62);
             this.buttonCalculate.TabIndex = 5;
@@ -95,7 +97,7 @@
             // 
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonExit.Location = new System.Drawing.Point(763, 500);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(133, 62);
             this.buttonExit.TabIndex = 6;
@@ -140,7 +142,7 @@
             // 
             this.textBoxB.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxB.Location = new System.Drawing.Point(763, 59);
-            this.textBoxB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxB.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxB.Name = "textBoxB";
             this.textBoxB.Size = new System.Drawing.Size(132, 24);
             this.textBoxB.TabIndex = 2;
@@ -160,7 +162,7 @@
             // 
             this.textBoxH.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxH.Location = new System.Drawing.Point(763, 95);
-            this.textBoxH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxH.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxH.Name = "textBoxH";
             this.textBoxH.Size = new System.Drawing.Size(132, 24);
             this.textBoxH.TabIndex = 3;
@@ -180,7 +182,7 @@
             // 
             this.textBoxN.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxN.Location = new System.Drawing.Point(763, 130);
-            this.textBoxN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxN.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxN.Name = "textBoxN";
             this.textBoxN.ReadOnly = true;
             this.textBoxN.Size = new System.Drawing.Size(132, 24);
@@ -201,7 +203,7 @@
             // 
             this.textBoxMultiple.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxMultiple.Location = new System.Drawing.Point(676, 377);
-            this.textBoxMultiple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMultiple.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMultiple.Name = "textBoxMultiple";
             this.textBoxMultiple.ReadOnly = true;
             this.textBoxMultiple.Size = new System.Drawing.Size(132, 24);
@@ -211,23 +213,23 @@
             // 
             this.labelText3F.AutoSize = true;
             this.labelText3F.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelText3F.Location = new System.Drawing.Point(273, 208);
+            this.labelText3F.Location = new System.Drawing.Point(247, 208);
             this.labelText3F.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText3F.Name = "labelText3F";
             this.labelText3F.Size = new System.Drawing.Size(93, 19);
             this.labelText3F.TabIndex = 11;
             this.labelText3F.Text = "Функция f(x)";
             // 
-            // listBoxFuncX
+            // listBoxArgX
             // 
-            this.listBoxFuncX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listBoxFuncX.FormattingEnabled = true;
-            this.listBoxFuncX.ItemHeight = 17;
-            this.listBoxFuncX.Location = new System.Drawing.Point(277, 233);
-            this.listBoxFuncX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBoxFuncX.Name = "listBoxFuncX";
-            this.listBoxFuncX.Size = new System.Drawing.Size(227, 378);
-            this.listBoxFuncX.TabIndex = 9;
+            this.listBoxArgX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBoxArgX.FormattingEnabled = true;
+            this.listBoxArgX.ItemHeight = 17;
+            this.listBoxArgX.Location = new System.Drawing.Point(4, 4);
+            this.listBoxArgX.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxArgX.Name = "listBoxArgX";
+            this.listBoxArgX.Size = new System.Drawing.Size(227, 378);
+            this.listBoxArgX.TabIndex = 9;
             // 
             // label1
             // 
@@ -240,14 +242,23 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "y=x³-6x²+19.8";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.listBoxArgX);
+            this.flowLayoutPanel1.Controls.Add(this.listBoxFuncX);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 230);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(472, 389);
+            this.flowLayoutPanel1.TabIndex = 19;
+            // 
             // FormLab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 627);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelText3F);
-            this.Controls.Add(this.listBoxFuncX);
             this.Controls.Add(this.labelText8M);
             this.Controls.Add(this.textBoxMultiple);
             this.Controls.Add(this.labelText7N);
@@ -262,11 +273,11 @@
             this.Controls.Add(this.buttonCalculate);
             this.Controls.Add(this.textBoxA);
             this.Controls.Add(this.labelText2X);
-            this.Controls.Add(this.listBoxArgX);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLab2";
             this.Text = "Тема 1.5. ЛР «Программирование алгоритмов регулярных циклических структур»";
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,7 +285,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBoxArgX;
+        private System.Windows.Forms.ListBox listBoxFuncX;
         private System.Windows.Forms.Label labelText2X;
         private System.Windows.Forms.TextBox textBoxA;
         private System.Windows.Forms.Button buttonCalculate;
@@ -290,8 +301,9 @@
         private System.Windows.Forms.Label labelText8M;
         private System.Windows.Forms.TextBox textBoxMultiple;
         private System.Windows.Forms.Label labelText3F;
-        private System.Windows.Forms.ListBox listBoxFuncX;
+        private System.Windows.Forms.ListBox listBoxArgX;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

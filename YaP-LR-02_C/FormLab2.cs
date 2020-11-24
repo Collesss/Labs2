@@ -18,44 +18,80 @@ namespace YaP_LR_02_C
         }
 
 
-
+        //функция вызываемая при нажатии на кнопку
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            Calculate(double.Parse(textBoxA.Text), double.Parse(textBoxB.Text), double.Parse(textBoxH.Text));
+            double a, b, h, multiple;
+            int n;
+
+            Input(out a, out b, out h);
+
+            Calculate(a, b, h, out n, out multiple);
+
+            Output(n, multiple);
         }
 
-        private void Calculate(double a, double b, double h)
+        //функция ввода начального, конечного и шага
+        private void Input(out double a, out double b, out double h)
+        {
+            a = double.Parse(textBoxA.Text);
+            b = double.Parse(textBoxB.Text);
+            h = double.Parse(textBoxH.Text);
+        }
+
+        //функция вывода количества итераций и произведения положительных значений функции
+        private void Output(int n, double Multiple)
+        {
+            textBoxN.Text = n.ToString();
+            textBoxMultiple.Text = Multiple.ToString("F2");
+        }
+
+        //функция вывода аргумента и значения функции в два ListBox
+        private void OutputListBox(double ArgX, double FuncX)
+        {
+            listBoxArgX.Items.Add(ArgX.ToString("F2"));
+            listBoxFuncX.Items.Add(FuncX.ToString("F2"));
+        }
+
+        //функция очистки списков
+        private void Clear()
         {
             listBoxArgX.Items.Clear();
             listBoxFuncX.Items.Clear();
+        }
 
-            int n = (int)((b - a) / h) + 1;
 
-            double p = 1;
+        //функция вычисления значений функции в промежутке от a до b с шагом h с выводом в ListBox и расчётом количества итераций и произведения положительных значений функции
+        private void Calculate(double a, double b, double h, out int n, out double multiple)
+        {
+            Clear();
 
-            for (int i = 0; i < n; i++)
+            int N = (int)((b - a) / h) + 1;
+
+            double m = 1;
+
+            for (int i = 0; i < N; i++)
             {
                 double x = a + i * h;
                 double func = Func(x);
 
                 if (func > 0)
-                    p *= func;
-                
-                listBoxArgX.Items.Add(x.ToString("F2"));
-                listBoxFuncX.Items.Add(func.ToString("F2"));
+                    m *= func;
+
+                OutputListBox(x, func);
             }
 
-            textBoxN.Text = (n - 1).ToString();
-            textBoxMultiple.Text = p.ToString();
-
+            n = N;
+            multiple = m;
         }
 
+        //функция расчёта значения функции по указанному аргументу x
         private double Func(double x)
         {
             return Math.Pow(x, 3) + 6 * Math.Pow(x, 2) + 19.8;
         }
 
-
+        //функция вызываемая при нажатии на кнопку выхода
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
