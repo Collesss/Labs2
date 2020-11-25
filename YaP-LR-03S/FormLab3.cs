@@ -24,15 +24,14 @@ namespace YaP_LR_03S
             Input(out X, out E);
 
             Calculate(X, E);
-
-
-
         }
 
 
-        public void Output(double X)
+        public void Output(double X, double ApproximateX)
         {
-            textBox3ApproximateX.Text = X.ToString("F2");
+            textBox3LogX.Text = X.ToString("F2");
+            textBox4ApproximateX.Text = ApproximateX.ToString("F5");
+            textBox5DeltaX.Text = Math.Abs(X - ApproximateX).ToString("F5");
         }
 
         public void OutputListBox(int iteration, double approximateRoot)
@@ -71,18 +70,14 @@ namespace YaP_LR_03S
 
                 OutputListBox(n, ApproximateX);
 
-                /*
-                listBox1ApproximateRoot.Items.Add(ApproximateX.ToString());
-
-                listBox2Iteration.Items.Add(n.ToString());
-                */
                 Root = Math.Pow(-1, n) * (Math.Pow(x, n + 1) / (n + 1));
 
                 n++;
             }
             while (Math.Abs(Root) > e);
 
-            
+
+            Output(ResX, ApproximateX);
         }
 
         private void button2Exit_Click(object sender, EventArgs e)

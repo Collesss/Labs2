@@ -34,30 +34,30 @@ namespace YaP_LR_02_C
         //функция ввода начального, конечного и шага
         private void Input(out double a, out double b, out double h)
         {
-            a = double.Parse(textBoxA.Text);
-            b = double.Parse(textBoxB.Text);
-            h = double.Parse(textBoxH.Text);
+            a = double.Parse(textBox1A.Text);
+            b = double.Parse(textBox2B.Text);
+            h = double.Parse(textBox3H.Text);
         }
 
         //функция вывода количества итераций и произведения положительных значений функции
         private void Output(int n, double Multiple)
         {
-            textBoxN.Text = n.ToString();
-            textBoxMultiple.Text = Multiple.ToString("F2");
+            textBox4N.Text = n.ToString();
+            textBox5Multiple.Text = Multiple.ToString("F2");
         }
 
         //функция вывода аргумента и значения функции в два ListBox
         private void OutputListBox(double ArgX, double FuncX)
         {
-            listBoxArgX.Items.Add(ArgX.ToString("F2"));
-            listBoxFuncX.Items.Add(FuncX.ToString("F2"));
+            listBox1ArgX.Items.Add(ArgX.ToString("F2"));
+            listBox2FuncX.Items.Add(FuncX.ToString("F2"));
         }
 
         //функция очистки списков
         private void Clear()
         {
-            listBoxArgX.Items.Clear();
-            listBoxFuncX.Items.Clear();
+            listBox1ArgX.Items.Clear();
+            listBox2FuncX.Items.Clear();
         }
 
 
@@ -66,6 +66,7 @@ namespace YaP_LR_02_C
         {
             Clear();
 
+            //ПЕРЕПРОВЕРИТЬ ВОЗМОЖНА ОШИБКА И НУЖНО ИСП. Math.Ceil();
             int N = (int)((b - a) / h) + 1;
 
             double m = 1;
