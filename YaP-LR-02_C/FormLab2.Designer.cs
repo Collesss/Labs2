@@ -46,8 +46,8 @@
             this.label9F = new System.Windows.Forms.Label();
             this.listBox1ArgX = new System.Windows.Forms.ListBox();
             this.label2Func = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1ListBox = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1ListBox.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox2FuncX
@@ -71,6 +71,7 @@
             this.label8X.Size = new System.Drawing.Size(100, 24);
             this.label8X.TabIndex = 18;
             this.label8X.Text = "Аргумент (x)";
+            this.label8X.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBox1A
             // 
@@ -220,6 +221,7 @@
             this.label9F.Size = new System.Drawing.Size(100, 24);
             this.label9F.TabIndex = 19;
             this.label9F.Text = "Функция f(x)";
+            this.label9F.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // listBox1ArgX
             // 
@@ -244,22 +246,21 @@
             this.label2Func.Text = "y=x³-6x²+19.8";
             this.label2Func.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel1ListBox
+            // panel1
             // 
-            this.flowLayoutPanel1ListBox.Controls.Add(this.listBox1ArgX);
-            this.flowLayoutPanel1ListBox.Controls.Add(this.listBox2FuncX);
-            this.flowLayoutPanel1ListBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.flowLayoutPanel1ListBox.Location = new System.Drawing.Point(10, 105);
-            this.flowLayoutPanel1ListBox.Name = "flowLayoutPanel1ListBox";
-            this.flowLayoutPanel1ListBox.Size = new System.Drawing.Size(420, 320);
-            this.flowLayoutPanel1ListBox.TabIndex = 20;
+            this.panel1.Controls.Add(this.listBox1ArgX);
+            this.panel1.Controls.Add(this.listBox2FuncX);
+            this.panel1.Location = new System.Drawing.Point(10, 105);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(420, 320);
+            this.panel1.TabIndex = 20;
             // 
             // FormLab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 436);
-            this.Controls.Add(this.flowLayoutPanel1ListBox);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2Func);
             this.Controls.Add(this.label9F);
             this.Controls.Add(this.label7M);
@@ -280,7 +281,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormLab2";
             this.Text = "Тема 1.5. ЛР «Программирование алгоритмов регулярных циклических структур»";
-            this.flowLayoutPanel1ListBox.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,7 +307,7 @@
         private System.Windows.Forms.Label label9F;
         private System.Windows.Forms.ListBox listBox1ArgX;
         private System.Windows.Forms.Label label2Func;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1ListBox;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
