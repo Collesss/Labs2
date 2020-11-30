@@ -10,6 +10,7 @@ namespace YaP_LR_01C
             InitializeComponent();
         }
 
+        //функция вызываемая при нажатии на кнопку
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
             double x, a;
@@ -18,12 +19,14 @@ namespace YaP_LR_01C
             OutputL(x, a);
         }
 
+        //функция вывода
         private void OutputL(double x, double a)
         {
             double l = CalculateL(x, a);
             textBoxL.Text = l.ToString();
         }
 
+        //функция расчёта условной функции
         private double CalculateL(double x, double a)
         {
             double l;
@@ -59,6 +62,7 @@ namespace YaP_LR_01C
             return l;
         }
 
+        //функция вызываемая при нажатии на кнопку выхода
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -66,7 +66,6 @@ namespace YaP_LR_02_C
         {
             Clear();
 
-            //ПЕРЕПРОВЕРИТЬ ВОЗМОЖНА ОШИБКА И НУЖНО ИСП. Math.Ceil();
             int N = (int)((b - a) / h) + 1;
 
             double m = 1;
