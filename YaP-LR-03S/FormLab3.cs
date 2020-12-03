@@ -81,7 +81,6 @@ namespace YaP_LR_03S
             }
             while (Math.Abs(Root) > e);
 
-
             Output(ResX, ApproximateX);
         }
 

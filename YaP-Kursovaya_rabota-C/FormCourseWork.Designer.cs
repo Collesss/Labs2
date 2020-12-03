@@ -34,7 +34,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // listBox1
             // 
-            this.listBox1.ColumnWidth = 30;
+            this.listBox1.ColumnWidth = 50;
             this.listBox1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
@@ -44,16 +44,44 @@ namespace YaP_Kursovaya_rabota_C
             "421",
             "4",
             "124",
+            "5351",
+            "136",
+            "1236",
+            "246",
+            "234636",
+            "347",
+            "37",
             "125",
             "1",
             "25",
             "165",
             "2",
-            "15"});
-            this.listBox1.Location = new System.Drawing.Point(164, 244);
+            "15",
+            "521512",
+            "6512",
+            "5",
+            "15245624626236",
+            "263236",
+            "26236263236",
+            "236",
+            "623263",
+            "1235",
+            "25",
+            "261",
+            "61",
+            "6",
+            "1",
+            "36",
+            "13",
+            "61",
+            "36",
+            "1",
+            "36"});
+            this.listBox1.Location = new System.Drawing.Point(164, 248);
             this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(303, 38);
+            this.listBox1.ScrollAlwaysVisible = true;
+            this.listBox1.Size = new System.Drawing.Size(454, 38);
             this.listBox1.TabIndex = 0;
             // 
             // FormCourseWork
@@ -63,7 +91,7 @@ namespace YaP_Kursovaya_rabota_C
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listBox1);
             this.Name = "FormCourseWork";
-            this.Text = "Form1";
+            this.Text = "КР «Программирование алгоритмов формирования и обработки одномерных массивов»";
             this.ResumeLayout(false);
 
         }
