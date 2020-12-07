@@ -87,5 +87,56 @@ namespace YaP_Kursovaya_rabota_C
         {
             listBox1Input.Items.Add(textBox1Num.Text);
         }
+
+        private void FormCourseWork_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = comboBox2.SelectedIndex = 0;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    groupBox1.Visible = true;
+                    groupBox2.Visible = false;
+                    break;
+                case 1:
+                    groupBox1.Visible = false;
+                    groupBox2.Visible = true;
+                    break;
+            }
+        }
+
+        private void SortBubbleUp(double[] nums)
+        {
+            for (int i = 0; i < nums.Length - 1; i++)
+                for (int j = 0; j < nums.Length - 1 - i; j++)
+                    if (nums[j] > nums[j + 1])
+                    {
+                        double k = nums[j];
+                        nums[j] = nums[j + 1];
+                        nums[j + 1] = k;
+                    }
+        }
+
+        private void SortSelectDown(double[] nums)
+        {
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int max = i;
+
+                for(int j = i + 1; j < nums.Length; j++)
+                    if (nums[max] < nums[j])
+                        max = j;
+
+                if (max != i)
+                {
+                    double k = nums[i];
+                    nums[i] = nums[max];
+                    nums[max] = k;
+                }
+            }
+        }
     }
 }
