@@ -44,6 +44,7 @@
             // 
             this.labelText5L.AutoSize = true;
             this.labelText5L.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText5L.ForeColor = System.Drawing.Color.Blue;
             this.labelText5L.Location = new System.Drawing.Point(75, 130);
             this.labelText5L.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText5L.Name = "labelText5L";
@@ -63,14 +64,20 @@
             // 
             // buttonCalculate
             // 
+            this.buttonCalculate.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonCalculate.FlatAppearance.BorderSize = 0;
+            this.buttonCalculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(133)))), ((int)(((byte)(234)))));
+            this.buttonCalculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(165)))), ((int)(((byte)(240)))));
+            this.buttonCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCalculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCalculate.ForeColor = System.Drawing.Color.Blue;
             this.buttonCalculate.Location = new System.Drawing.Point(305, 85);
             this.buttonCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalculate.Name = "buttonCalculate";
             this.buttonCalculate.Size = new System.Drawing.Size(90, 50);
             this.buttonCalculate.TabIndex = 4;
             this.buttonCalculate.Text = "Вычислить\r\nl=f(x, a)";
-            this.buttonCalculate.UseVisualStyleBackColor = true;
+            this.buttonCalculate.UseVisualStyleBackColor = false;
             this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
             // labelText1Red
@@ -89,6 +96,7 @@
             // 
             this.labelText2.AutoSize = true;
             this.labelText2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText2.ForeColor = System.Drawing.Color.Blue;
             this.labelText2.Location = new System.Drawing.Point(175, 15);
             this.labelText2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText2.Name = "labelText2";
@@ -98,17 +106,20 @@
             // 
             // textBoxA
             // 
-            this.textBoxA.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(218)))), ((int)(((byte)(169)))));
+            this.textBoxA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxA.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxA.Location = new System.Drawing.Point(105, 98);
             this.textBoxA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA.Name = "textBoxA";
-            this.textBoxA.Size = new System.Drawing.Size(100, 24);
+            this.textBoxA.Size = new System.Drawing.Size(100, 25);
             this.textBoxA.TabIndex = 2;
             // 
             // labelText4A
             // 
             this.labelText4A.AutoSize = true;
             this.labelText4A.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText4A.ForeColor = System.Drawing.Color.Blue;
             this.labelText4A.Location = new System.Drawing.Point(75, 100);
             this.labelText4A.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText4A.Name = "labelText4A";
@@ -118,17 +129,20 @@
             // 
             // textBoxX
             // 
+            this.textBoxX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(158)))), ((int)(((byte)(31)))));
+            this.textBoxX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxX.Location = new System.Drawing.Point(105, 73);
             this.textBoxX.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxX.Name = "textBoxX";
-            this.textBoxX.Size = new System.Drawing.Size(100, 24);
+            this.textBoxX.Size = new System.Drawing.Size(100, 17);
             this.textBoxX.TabIndex = 1;
             // 
             // labelText3X
             // 
             this.labelText3X.AutoSize = true;
             this.labelText3X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText3X.ForeColor = System.Drawing.Color.Blue;
             this.labelText3X.Location = new System.Drawing.Point(75, 75);
             this.labelText3X.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText3X.Name = "labelText3X";
@@ -138,20 +152,28 @@
             // 
             // buttonExit
             // 
+            this.buttonExit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(133)))), ((int)(((byte)(234)))));
+            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(165)))), ((int)(((byte)(240)))));
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExit.ForeColor = System.Drawing.Color.Blue;
             this.buttonExit.Location = new System.Drawing.Point(425, 85);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(90, 50);
             this.buttonExit.TabIndex = 5;
             this.buttonExit.Text = "Выход";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // FormLab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(188)))), ((int)(((byte)(100)))));
             this.ClientSize = new System.Drawing.Size(584, 186);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.textBoxX);
