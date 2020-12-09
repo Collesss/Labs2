@@ -98,7 +98,7 @@
             // 
             this.labelText2.AutoSize = true;
             this.labelText2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelText2.ForeColor = System.Drawing.Color.Blue;
+            this.labelText2.ForeColor = System.Drawing.Color.Black;
             this.labelText2.Location = new System.Drawing.Point(175, 15);
             this.labelText2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText2.Name = "labelText2";
@@ -154,11 +154,11 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
             this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonExit.FlatAppearance.BorderSize = 0;
-            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(133)))), ((int)(((byte)(234)))));
-            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(165)))), ((int)(((byte)(240)))));
+            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonExit.ForeColor = System.Drawing.Color.Blue;
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(188)))), ((int)(((byte)(100)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(584, 186);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.textBoxX);
