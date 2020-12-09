@@ -39,13 +39,13 @@ namespace YaP_Kursovaya_rabota_C
         }
 
         //функция вызываемая при нажатии на кнопку выхода
-        private void button3Exit_Click(object sender, EventArgs e)
+        private void button5Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
         //функция вызываемая при нажатии на кнопку
-        private void button1Calculate_Click(object sender, EventArgs e)
+        private void button3Calculate_Click(object sender, EventArgs e)
         {
             double[] nums = Input();
 
@@ -66,6 +66,16 @@ namespace YaP_Kursovaya_rabota_C
             for (int i = 0; i < nums.Length; i++)
                 nums[i] = double.Parse(listBox1Input.Items[i].ToString());
 
+            switch (comboBox2SelectOutput.SelectedIndex)
+            {
+                case 0:
+                    SortSelectDown(nums);
+                    break;
+                case 1:
+                    SortBubbleUp(nums);
+                    break;
+            }
+
             return nums;
         }
 
@@ -77,7 +87,7 @@ namespace YaP_Kursovaya_rabota_C
         }
 
         //функция вызываемая при нажатии на кнопку очистки списка
-        private void button2ClearList_Click(object sender, EventArgs e)
+        private void button4ClearList_Click(object sender, EventArgs e)
         {
             listBox1Input.Items.Clear();
         }
@@ -90,20 +100,20 @@ namespace YaP_Kursovaya_rabota_C
 
         private void FormCourseWork_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = comboBox2.SelectedIndex = 0;
+            comboBox1SelectInput.SelectedIndex = comboBox2SelectOutput.SelectedIndex = 0;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1SelectInput_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox1.SelectedIndex)
+            switch (comboBox1SelectInput.SelectedIndex)
             {
                 case 0:
-                    groupBox1.Visible = true;
-                    groupBox2.Visible = false;
+                    groupBox1InputKeyBoard.Visible = true;
+                    groupBox2InputRand.Visible = false;
                     break;
                 case 1:
-                    groupBox1.Visible = false;
-                    groupBox2.Visible = true;
+                    groupBox1InputKeyBoard.Visible = false;
+                    groupBox2InputRand.Visible = true;
                     break;
             }
         }
@@ -136,6 +146,19 @@ namespace YaP_Kursovaya_rabota_C
                     nums[i] = nums[max];
                     nums[max] = k;
                 }
+            }
+        }
+
+        private void button2FillArrayRand_Click(object sender, EventArgs e)
+        {
+            int countRand = int.Parse(textBox2CountRand.Text);
+
+            Random random = new Random();
+
+            for (int i = 0; i < countRand; i++)
+            {
+                double numAdd = (random.NextDouble() - 0.5) * 100;
+                listBox1Input.Items.Add(numAdd.ToString("F2"));
             }
         }
     }
