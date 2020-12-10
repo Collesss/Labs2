@@ -66,7 +66,7 @@ namespace YaP_Kursovaya_rabota_C
             this.listBox1Input.FormattingEnabled = true;
             this.listBox1Input.HorizontalScrollbar = true;
             this.listBox1Input.ItemHeight = 17;
-            this.listBox1Input.Location = new System.Drawing.Point(210, 311);
+            this.listBox1Input.Location = new System.Drawing.Point(210, 270);
             this.listBox1Input.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1Input.MultiColumn = true;
             this.listBox1Input.Name = "listBox1Input";
@@ -77,7 +77,7 @@ namespace YaP_Kursovaya_rabota_C
             // textBox1Num
             // 
             this.textBox1Num.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1Num.Location = new System.Drawing.Point(278, 43);
+            this.textBox1Num.Location = new System.Drawing.Point(250, 28);
             this.textBox1Num.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1Num.Name = "textBox1Num";
             this.textBox1Num.Size = new System.Drawing.Size(155, 24);
@@ -86,7 +86,7 @@ namespace YaP_Kursovaya_rabota_C
             // label4Num
             // 
             this.label4Num.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4Num.Location = new System.Drawing.Point(38, 43);
+            this.label4Num.Location = new System.Drawing.Point(10, 28);
             this.label4Num.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4Num.Name = "label4Num";
             this.label4Num.Size = new System.Drawing.Size(235, 24);
@@ -97,7 +97,7 @@ namespace YaP_Kursovaya_rabota_C
             // button3Calculate
             // 
             this.button3Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3Calculate.Location = new System.Drawing.Point(560, 163);
+            this.button3Calculate.Location = new System.Drawing.Point(580, 145);
             this.button3Calculate.Margin = new System.Windows.Forms.Padding(4);
             this.button3Calculate.Name = "button3Calculate";
             this.button3Calculate.Size = new System.Drawing.Size(100, 50);
@@ -113,7 +113,7 @@ namespace YaP_Kursovaya_rabota_C
             this.listBox2Output.FormattingEnabled = true;
             this.listBox2Output.HorizontalScrollbar = true;
             this.listBox2Output.ItemHeight = 17;
-            this.listBox2Output.Location = new System.Drawing.Point(210, 428);
+            this.listBox2Output.Location = new System.Drawing.Point(210, 375);
             this.listBox2Output.Margin = new System.Windows.Forms.Padding(4);
             this.listBox2Output.MultiColumn = true;
             this.listBox2Output.Name = "listBox2Output";
@@ -124,7 +124,7 @@ namespace YaP_Kursovaya_rabota_C
             // button4ClearList
             // 
             this.button4ClearList.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4ClearList.Location = new System.Drawing.Point(665, 163);
+            this.button4ClearList.Location = new System.Drawing.Point(685, 145);
             this.button4ClearList.Margin = new System.Windows.Forms.Padding(4);
             this.button4ClearList.Name = "button4ClearList";
             this.button4ClearList.Size = new System.Drawing.Size(100, 50);
@@ -136,7 +136,7 @@ namespace YaP_Kursovaya_rabota_C
             // button4Exit
             // 
             this.button4Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4Exit.Location = new System.Drawing.Point(770, 163);
+            this.button4Exit.Location = new System.Drawing.Point(790, 145);
             this.button4Exit.Margin = new System.Windows.Forms.Padding(4);
             this.button4Exit.Name = "button4Exit";
             this.button4Exit.Size = new System.Drawing.Size(100, 50);
@@ -148,7 +148,7 @@ namespace YaP_Kursovaya_rabota_C
             // label10Avg
             // 
             this.label10Avg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10Avg.Location = new System.Drawing.Point(8, 501);
+            this.label10Avg.Location = new System.Drawing.Point(20, 420);
             this.label10Avg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10Avg.Name = "label10Avg";
             this.label10Avg.Size = new System.Drawing.Size(270, 24);
@@ -159,7 +159,7 @@ namespace YaP_Kursovaya_rabota_C
             // textBox2Avg
             // 
             this.textBox2Avg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2Avg.Location = new System.Drawing.Point(283, 501);
+            this.textBox2Avg.Location = new System.Drawing.Point(295, 420);
             this.textBox2Avg.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2Avg.Name = "textBox2Avg";
             this.textBox2Avg.ReadOnly = true;
@@ -169,7 +169,7 @@ namespace YaP_Kursovaya_rabota_C
             // label11Count
             // 
             this.label11Count.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11Count.Location = new System.Drawing.Point(448, 501);
+            this.label11Count.Location = new System.Drawing.Point(460, 420);
             this.label11Count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11Count.Name = "label11Count";
             this.label11Count.Size = new System.Drawing.Size(300, 24);
@@ -180,7 +180,7 @@ namespace YaP_Kursovaya_rabota_C
             // textBox3Count
             // 
             this.textBox3Count.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3Count.Location = new System.Drawing.Point(753, 501);
+            this.textBox3Count.Location = new System.Drawing.Point(765, 420);
             this.textBox3Count.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3Count.Name = "textBox3Count";
             this.textBox3Count.ReadOnly = true;
@@ -190,7 +190,7 @@ namespace YaP_Kursovaya_rabota_C
             // button1Add
             // 
             this.button1Add.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1Add.Location = new System.Drawing.Point(443, 30);
+            this.button1Add.Location = new System.Drawing.Point(415, 15);
             this.button1Add.Margin = new System.Windows.Forms.Padding(4);
             this.button1Add.Name = "button1Add";
             this.button1Add.Size = new System.Drawing.Size(100, 50);
@@ -239,7 +239,7 @@ namespace YaP_Kursovaya_rabota_C
             // label8InputArray
             // 
             this.label8InputArray.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8InputArray.Location = new System.Drawing.Point(105, 311);
+            this.label8InputArray.Location = new System.Drawing.Point(105, 270);
             this.label8InputArray.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8InputArray.Name = "label8InputArray";
             this.label8InputArray.Size = new System.Drawing.Size(100, 38);
@@ -250,7 +250,7 @@ namespace YaP_Kursovaya_rabota_C
             // label9OutputArray
             // 
             this.label9OutputArray.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9OutputArray.Location = new System.Drawing.Point(105, 428);
+            this.label9OutputArray.Location = new System.Drawing.Point(105, 375);
             this.label9OutputArray.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9OutputArray.Name = "label9OutputArray";
             this.label9OutputArray.Size = new System.Drawing.Size(100, 38);
@@ -266,7 +266,7 @@ namespace YaP_Kursovaya_rabota_C
             this.comboBox1SelectInput.Items.AddRange(new object[] {
             "Ввод массива с клавиатуры",
             "Ввод массива генератором случайных чисел"});
-            this.comboBox1SelectInput.Location = new System.Drawing.Point(310, 279);
+            this.comboBox1SelectInput.Location = new System.Drawing.Point(295, 240);
             this.comboBox1SelectInput.Name = "comboBox1SelectInput";
             this.comboBox1SelectInput.Size = new System.Drawing.Size(350, 25);
             this.comboBox1SelectInput.TabIndex = 17;
@@ -279,7 +279,7 @@ namespace YaP_Kursovaya_rabota_C
             this.comboBox2SelectOutput.Items.AddRange(new object[] {
             "Сортировка по убыванию методом выбора",
             "Сортировка по возрастанию методом пузырька"});
-            this.comboBox2SelectOutput.Location = new System.Drawing.Point(310, 396);
+            this.comboBox2SelectOutput.Location = new System.Drawing.Point(295, 345);
             this.comboBox2SelectOutput.Name = "comboBox2SelectOutput";
             this.comboBox2SelectOutput.Size = new System.Drawing.Size(350, 25);
             this.comboBox2SelectOutput.TabIndex = 18;
@@ -287,10 +287,10 @@ namespace YaP_Kursovaya_rabota_C
             // label6SelectInput
             // 
             this.label6SelectInput.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6SelectInput.Location = new System.Drawing.Point(390, 243);
+            this.label6SelectInput.Location = new System.Drawing.Point(385, 210);
             this.label6SelectInput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6SelectInput.Name = "label6SelectInput";
-            this.label6SelectInput.Size = new System.Drawing.Size(165, 24);
+            this.label6SelectInput.Size = new System.Drawing.Size(170, 24);
             this.label6SelectInput.TabIndex = 19;
             this.label6SelectInput.Text = "Заполнение массива";
             this.label6SelectInput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -298,10 +298,10 @@ namespace YaP_Kursovaya_rabota_C
             // label7SelectOutput
             // 
             this.label7SelectOutput.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7SelectOutput.Location = new System.Drawing.Point(382, 369);
+            this.label7SelectOutput.Location = new System.Drawing.Point(365, 315);
             this.label7SelectOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7SelectOutput.Name = "label7SelectOutput";
-            this.label7SelectOutput.Size = new System.Drawing.Size(205, 24);
+            this.label7SelectOutput.Size = new System.Drawing.Size(210, 24);
             this.label7SelectOutput.TabIndex = 20;
             this.label7SelectOutput.Text = "Преобразование массива";
             this.label7SelectOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -311,9 +311,9 @@ namespace YaP_Kursovaya_rabota_C
             this.groupBox1InputKeyBoard.Controls.Add(this.button1Add);
             this.groupBox1InputKeyBoard.Controls.Add(this.label4Num);
             this.groupBox1InputKeyBoard.Controls.Add(this.textBox1Num);
-            this.groupBox1InputKeyBoard.Location = new System.Drawing.Point(12, 134);
+            this.groupBox1InputKeyBoard.Location = new System.Drawing.Point(50, 130);
             this.groupBox1InputKeyBoard.Name = "groupBox1InputKeyBoard";
-            this.groupBox1InputKeyBoard.Size = new System.Drawing.Size(548, 93);
+            this.groupBox1InputKeyBoard.Size = new System.Drawing.Size(525, 75);
             this.groupBox1InputKeyBoard.TabIndex = 21;
             this.groupBox1InputKeyBoard.TabStop = false;
             this.groupBox1InputKeyBoard.Text = "Ввод с клавиатуры";
@@ -323,9 +323,9 @@ namespace YaP_Kursovaya_rabota_C
             this.groupBox2InputRand.Controls.Add(this.button2FillArrayRand);
             this.groupBox2InputRand.Controls.Add(this.label5CountRand);
             this.groupBox2InputRand.Controls.Add(this.textBox2CountRand);
-            this.groupBox2InputRand.Location = new System.Drawing.Point(12, 134);
+            this.groupBox2InputRand.Location = new System.Drawing.Point(50, 130);
             this.groupBox2InputRand.Name = "groupBox2InputRand";
-            this.groupBox2InputRand.Size = new System.Drawing.Size(548, 93);
+            this.groupBox2InputRand.Size = new System.Drawing.Size(525, 75);
             this.groupBox2InputRand.TabIndex = 22;
             this.groupBox2InputRand.TabStop = false;
             this.groupBox2InputRand.Text = "Ввод генератором случайных чисел";
@@ -334,7 +334,7 @@ namespace YaP_Kursovaya_rabota_C
             // button2FillArrayRand
             // 
             this.button2FillArrayRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2FillArrayRand.Location = new System.Drawing.Point(443, 30);
+            this.button2FillArrayRand.Location = new System.Drawing.Point(415, 15);
             this.button2FillArrayRand.Margin = new System.Windows.Forms.Padding(4);
             this.button2FillArrayRand.Name = "button2FillArrayRand";
             this.button2FillArrayRand.Size = new System.Drawing.Size(100, 50);
@@ -346,7 +346,7 @@ namespace YaP_Kursovaya_rabota_C
             // label5CountRand
             // 
             this.label5CountRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5CountRand.Location = new System.Drawing.Point(100, 43);
+            this.label5CountRand.Location = new System.Drawing.Point(75, 28);
             this.label5CountRand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5CountRand.Name = "label5CountRand";
             this.label5CountRand.Size = new System.Drawing.Size(170, 24);
@@ -357,7 +357,7 @@ namespace YaP_Kursovaya_rabota_C
             // textBox2CountRand
             // 
             this.textBox2CountRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2CountRand.Location = new System.Drawing.Point(278, 43);
+            this.textBox2CountRand.Location = new System.Drawing.Point(250, 28);
             this.textBox2CountRand.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2CountRand.Name = "textBox2CountRand";
             this.textBox2CountRand.Size = new System.Drawing.Size(155, 24);
@@ -367,7 +367,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 578);
+            this.ClientSize = new System.Drawing.Size(934, 461);
             this.Controls.Add(this.groupBox2InputRand);
             this.Controls.Add(this.groupBox1InputKeyBoard);
             this.Controls.Add(this.label7SelectOutput);
