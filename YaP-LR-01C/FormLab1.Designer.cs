@@ -53,10 +53,10 @@
             // 
             // textBoxL
             // 
-            this.textBoxL.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.textBoxL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
             this.textBoxL.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxL.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxL.ForeColor = System.Drawing.Color.Blue;
+            this.textBoxL.ForeColor = System.Drawing.Color.Black;
             this.textBoxL.Location = new System.Drawing.Point(105, 130);
             this.textBoxL.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxL.Name = "textBoxL";
@@ -66,13 +66,13 @@
             // 
             // buttonCalculate
             // 
-            this.buttonCalculate.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
             this.buttonCalculate.FlatAppearance.BorderSize = 0;
-            this.buttonCalculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(133)))), ((int)(((byte)(234)))));
-            this.buttonCalculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(165)))), ((int)(((byte)(240)))));
+            this.buttonCalculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.buttonCalculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
             this.buttonCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCalculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCalculate.ForeColor = System.Drawing.Color.Blue;
+            this.buttonCalculate.ForeColor = System.Drawing.Color.Black;
             this.buttonCalculate.Location = new System.Drawing.Point(305, 85);
             this.buttonCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalculate.Name = "buttonCalculate";
@@ -108,10 +108,10 @@
             // 
             // textBoxA
             // 
-            this.textBoxA.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.textBoxA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
             this.textBoxA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxA.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxA.ForeColor = System.Drawing.Color.Blue;
+            this.textBoxA.ForeColor = System.Drawing.Color.Black;
             this.textBoxA.Location = new System.Drawing.Point(105, 100);
             this.textBoxA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA.Name = "textBoxA";
@@ -131,10 +131,10 @@
             // 
             // textBoxX
             // 
-            this.textBoxX.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.textBoxX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
             this.textBoxX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxX.ForeColor = System.Drawing.Color.Blue;
+            this.textBoxX.ForeColor = System.Drawing.Color.Black;
             this.textBoxX.Location = new System.Drawing.Point(105, 75);
             this.textBoxX.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxX.Name = "textBoxX";
@@ -161,7 +161,7 @@
             this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonExit.ForeColor = System.Drawing.Color.Blue;
+            this.buttonExit.ForeColor = System.Drawing.Color.Black;
             this.buttonExit.Location = new System.Drawing.Point(425, 85);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExit.Name = "buttonExit";
