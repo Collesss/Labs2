@@ -17,7 +17,22 @@ namespace YaP_Kursovaya_rabota_C
             InitializeComponent();
         }
 
-        //функция расчитывающая среднее арифметическое массива и выводящая элементы массива которые мень меньше среднего арифметического в ListBox
+        
+        //функция вызываемая при нажатии на кнопку
+        private void button3Calculate_Click(object sender, EventArgs e)
+        {
+            double[] nums = Input();
+
+            double avg;
+            int count;
+
+            Calculate(nums, out avg, out count);
+
+            Output(count, avg);
+        }
+
+
+        //функция расчитывающая среднее арифметическое массива и выводящая элементы массива которые меньше среднего арифметического в ListBox
         private void Calculate(double[] nums, out double avg, out int countLessAvg)
         {
             listBox2Output.Items.Clear();
@@ -38,26 +53,6 @@ namespace YaP_Kursovaya_rabota_C
                 }
         }
 
-        //функция вызываемая при нажатии на кнопку выхода
-        private void button5Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        //функция вызываемая при нажатии на кнопку
-        private void button3Calculate_Click(object sender, EventArgs e)
-        {
-            double[] nums = Input();
-
-            double avg;
-            int count;
-
-            Calculate(nums, out avg, out count);
-
-            Output(count, avg);
-        }
-
-        
         //функция ввода
         private double[] Input()
         {
@@ -86,23 +81,13 @@ namespace YaP_Kursovaya_rabota_C
             textBox3Count.Text = count.ToString();
         }
 
-        //функция вызываемая при нажатии на кнопку очистки списка
-        private void button4ClearList_Click(object sender, EventArgs e)
-        {
-            listBox1Input.Items.Clear();
-        }
-
-        //функция вызываемая при нажатии на кнопку добавления элемента в список
-        private void button1Add_Click(object sender, EventArgs e)
-        {
-            listBox1Input.Items.Add(textBox1Num.Text);
-        }
-
+        //функция вызываемая при загрузке формы
         private void FormCourseWork_Load(object sender, EventArgs e)
         {
             comboBox1SelectInput.SelectedIndex = comboBox2SelectOutput.SelectedIndex = 0;
         }
 
+        //функция вызываемая при выборе метода ввода. Нужна для переключения панелей которые отвечают за соответствующий тип ввода 
         private void comboBox1SelectInput_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBox1SelectInput.SelectedIndex)
@@ -118,6 +103,7 @@ namespace YaP_Kursovaya_rabota_C
             }
         }
 
+        //функция сортировки пузырьком по возрастанию
         private void SortBubbleUp(double[] nums)
         {
             for (int i = 0; i < nums.Length - 1; i++)
@@ -130,6 +116,7 @@ namespace YaP_Kursovaya_rabota_C
                     }
         }
 
+        //функция сортировки выбором по убыванию
         private void SortSelectDown(double[] nums)
         {
             for (int i = 0; i < nums.Length; i++)
@@ -149,6 +136,7 @@ namespace YaP_Kursovaya_rabota_C
             }
         }
 
+        //функция вызываемая при нажатии на кнопку добаления случайный чисел в список
         private void button2FillArrayRand_Click(object sender, EventArgs e)
         {
             int countRand = int.Parse(textBox2CountRand.Text);
@@ -160,6 +148,24 @@ namespace YaP_Kursovaya_rabota_C
                 double numAdd = (random.NextDouble() - 0.5) * 100;
                 listBox1Input.Items.Add(numAdd.ToString("F2"));
             }
+        }
+        
+        //функция вызываемая при нажатии на кнопку очистки списка
+        private void button4ClearList_Click(object sender, EventArgs e)
+        {
+            listBox1Input.Items.Clear();
+        }
+
+        //функция вызываемая при нажатии на кнопку добавления элемента в список
+        private void button1Add_Click(object sender, EventArgs e)
+        {
+            listBox1Input.Items.Add(textBox1Num.Text);
+        }
+        
+        //функция вызываемая при нажатии на кнопку выхода
+        private void button5Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

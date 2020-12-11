@@ -61,6 +61,8 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // listBox1Input
             // 
+            this.listBox1Input.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox1Input.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1Input.ColumnWidth = 50;
             this.listBox1Input.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1Input.FormattingEnabled = true;
@@ -71,16 +73,18 @@ namespace YaP_Kursovaya_rabota_C
             this.listBox1Input.MultiColumn = true;
             this.listBox1Input.Name = "listBox1Input";
             this.listBox1Input.ScrollAlwaysVisible = true;
-            this.listBox1Input.Size = new System.Drawing.Size(600, 38);
+            this.listBox1Input.Size = new System.Drawing.Size(600, 34);
             this.listBox1Input.TabIndex = 0;
             // 
             // textBox1Num
             // 
-            this.textBox1Num.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1Num.Location = new System.Drawing.Point(250, 28);
+            this.textBox1Num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox1Num.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1Num.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1Num.Location = new System.Drawing.Point(250, 31);
             this.textBox1Num.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1Num.Name = "textBox1Num";
-            this.textBox1Num.Size = new System.Drawing.Size(155, 24);
+            this.textBox1Num.Size = new System.Drawing.Size(155, 20);
             this.textBox1Num.TabIndex = 1;
             // 
             // label4Num
@@ -96,6 +100,11 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button3Calculate
             // 
+            this.button3Calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button3Calculate.FlatAppearance.BorderSize = 0;
+            this.button3Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button3Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button3Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3Calculate.Location = new System.Drawing.Point(580, 145);
             this.button3Calculate.Margin = new System.Windows.Forms.Padding(4);
@@ -103,11 +112,13 @@ namespace YaP_Kursovaya_rabota_C
             this.button3Calculate.Size = new System.Drawing.Size(100, 50);
             this.button3Calculate.TabIndex = 3;
             this.button3Calculate.Text = "Вычислить";
-            this.button3Calculate.UseVisualStyleBackColor = true;
+            this.button3Calculate.UseVisualStyleBackColor = false;
             this.button3Calculate.Click += new System.EventHandler(this.button3Calculate_Click);
             // 
             // listBox2Output
             // 
+            this.listBox2Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox2Output.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox2Output.ColumnWidth = 50;
             this.listBox2Output.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox2Output.FormattingEnabled = true;
@@ -118,11 +129,16 @@ namespace YaP_Kursovaya_rabota_C
             this.listBox2Output.MultiColumn = true;
             this.listBox2Output.Name = "listBox2Output";
             this.listBox2Output.ScrollAlwaysVisible = true;
-            this.listBox2Output.Size = new System.Drawing.Size(600, 38);
+            this.listBox2Output.Size = new System.Drawing.Size(600, 34);
             this.listBox2Output.TabIndex = 4;
             // 
             // button4ClearList
             // 
+            this.button4ClearList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button4ClearList.FlatAppearance.BorderSize = 0;
+            this.button4ClearList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button4ClearList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button4ClearList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4ClearList.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4ClearList.Location = new System.Drawing.Point(685, 145);
             this.button4ClearList.Margin = new System.Windows.Forms.Padding(4);
@@ -130,11 +146,16 @@ namespace YaP_Kursovaya_rabota_C
             this.button4ClearList.Size = new System.Drawing.Size(100, 50);
             this.button4ClearList.TabIndex = 5;
             this.button4ClearList.Text = "Очистить список";
-            this.button4ClearList.UseVisualStyleBackColor = true;
+            this.button4ClearList.UseVisualStyleBackColor = false;
             this.button4ClearList.Click += new System.EventHandler(this.button4ClearList_Click);
             // 
             // button4Exit
             // 
+            this.button4Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button4Exit.FlatAppearance.BorderSize = 0;
+            this.button4Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button4Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button4Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4Exit.Location = new System.Drawing.Point(790, 145);
             this.button4Exit.Margin = new System.Windows.Forms.Padding(4);
@@ -142,7 +163,7 @@ namespace YaP_Kursovaya_rabota_C
             this.button4Exit.Size = new System.Drawing.Size(100, 50);
             this.button4Exit.TabIndex = 6;
             this.button4Exit.Text = "Выход";
-            this.button4Exit.UseVisualStyleBackColor = true;
+            this.button4Exit.UseVisualStyleBackColor = false;
             this.button4Exit.Click += new System.EventHandler(this.button5Exit_Click);
             // 
             // label10Avg
@@ -158,12 +179,14 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox2Avg
             // 
-            this.textBox2Avg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2Avg.Location = new System.Drawing.Point(295, 420);
+            this.textBox2Avg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox2Avg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2Avg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2Avg.Location = new System.Drawing.Point(295, 423);
             this.textBox2Avg.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2Avg.Name = "textBox2Avg";
             this.textBox2Avg.ReadOnly = true;
-            this.textBox2Avg.Size = new System.Drawing.Size(155, 24);
+            this.textBox2Avg.Size = new System.Drawing.Size(155, 20);
             this.textBox2Avg.TabIndex = 7;
             // 
             // label11Count
@@ -179,16 +202,23 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox3Count
             // 
-            this.textBox3Count.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3Count.Location = new System.Drawing.Point(765, 420);
+            this.textBox3Count.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox3Count.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3Count.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3Count.Location = new System.Drawing.Point(765, 423);
             this.textBox3Count.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3Count.Name = "textBox3Count";
             this.textBox3Count.ReadOnly = true;
-            this.textBox3Count.Size = new System.Drawing.Size(155, 24);
+            this.textBox3Count.Size = new System.Drawing.Size(155, 20);
             this.textBox3Count.TabIndex = 9;
             // 
             // button1Add
             // 
+            this.button1Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button1Add.FlatAppearance.BorderSize = 0;
+            this.button1Add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button1Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button1Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1Add.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1Add.Location = new System.Drawing.Point(415, 15);
             this.button1Add.Margin = new System.Windows.Forms.Padding(4);
@@ -196,7 +226,7 @@ namespace YaP_Kursovaya_rabota_C
             this.button1Add.Size = new System.Drawing.Size(100, 50);
             this.button1Add.TabIndex = 11;
             this.button1Add.Text = "Добавить в список";
-            this.button1Add.UseVisualStyleBackColor = true;
+            this.button1Add.UseVisualStyleBackColor = false;
             this.button1Add.Click += new System.EventHandler(this.button1Add_Click);
             // 
             // label1TextBlue
@@ -260,6 +290,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // comboBox1SelectInput
             // 
+            this.comboBox1SelectInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
             this.comboBox1SelectInput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1SelectInput.DropDownWidth = 350;
             this.comboBox1SelectInput.FormattingEnabled = true;
@@ -274,6 +305,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // comboBox2SelectOutput
             // 
+            this.comboBox2SelectOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
             this.comboBox2SelectOutput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2SelectOutput.FormattingEnabled = true;
             this.comboBox2SelectOutput.Items.AddRange(new object[] {
@@ -333,14 +365,20 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button2FillArrayRand
             // 
+            this.button2FillArrayRand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button2FillArrayRand.FlatAppearance.BorderSize = 0;
+            this.button2FillArrayRand.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button2FillArrayRand.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button2FillArrayRand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2FillArrayRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2FillArrayRand.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2FillArrayRand.Location = new System.Drawing.Point(415, 15);
             this.button2FillArrayRand.Margin = new System.Windows.Forms.Padding(4);
             this.button2FillArrayRand.Name = "button2FillArrayRand";
             this.button2FillArrayRand.Size = new System.Drawing.Size(100, 50);
             this.button2FillArrayRand.TabIndex = 11;
             this.button2FillArrayRand.Text = "Заполнить список";
-            this.button2FillArrayRand.UseVisualStyleBackColor = true;
+            this.button2FillArrayRand.UseVisualStyleBackColor = false;
             this.button2FillArrayRand.Click += new System.EventHandler(this.button2FillArrayRand_Click);
             // 
             // label5CountRand
@@ -356,17 +394,20 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox2CountRand
             // 
-            this.textBox2CountRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2CountRand.Location = new System.Drawing.Point(250, 28);
+            this.textBox2CountRand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox2CountRand.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2CountRand.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2CountRand.Location = new System.Drawing.Point(250, 31);
             this.textBox2CountRand.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2CountRand.Name = "textBox2CountRand";
-            this.textBox2CountRand.Size = new System.Drawing.Size(155, 24);
+            this.textBox2CountRand.Size = new System.Drawing.Size(155, 20);
             this.textBox2CountRand.TabIndex = 1;
             // 
             // FormCourseWork
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(934, 461);
             this.Controls.Add(this.groupBox2InputRand);
             this.Controls.Add(this.groupBox1InputKeyBoard);

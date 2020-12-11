@@ -51,6 +51,11 @@
             // 
             // button1Calculate
             // 
+            this.button1Calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button1Calculate.FlatAppearance.BorderSize = 0;
+            this.button1Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button1Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button1Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1Calculate.Location = new System.Drawing.Point(25, 165);
             this.button1Calculate.Margin = new System.Windows.Forms.Padding(4);
@@ -58,18 +63,20 @@
             this.button1Calculate.Size = new System.Drawing.Size(100, 50);
             this.button1Calculate.TabIndex = 3;
             this.button1Calculate.Text = "Вычислить";
-            this.button1Calculate.UseVisualStyleBackColor = true;
+            this.button1Calculate.UseVisualStyleBackColor = false;
             this.button1Calculate.Click += new System.EventHandler(this.button1_Click);
             // 
             // listBox1ApproximateRoot
             // 
+            this.listBox1ApproximateRoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox1ApproximateRoot.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1ApproximateRoot.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1ApproximateRoot.FormattingEnabled = true;
             this.listBox1ApproximateRoot.ItemHeight = 17;
             this.listBox1ApproximateRoot.Location = new System.Drawing.Point(90, 5);
             this.listBox1ApproximateRoot.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1ApproximateRoot.Name = "listBox1ApproximateRoot";
-            this.listBox1ApproximateRoot.Size = new System.Drawing.Size(200, 310);
+            this.listBox1ApproximateRoot.Size = new System.Drawing.Size(200, 306);
             this.listBox1ApproximateRoot.TabIndex = 9;
             // 
             // label1ApproximateRoot
@@ -96,22 +103,26 @@
             // 
             // listBox2Iteration
             // 
+            this.listBox2Iteration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox2Iteration.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox2Iteration.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox2Iteration.FormattingEnabled = true;
             this.listBox2Iteration.ItemHeight = 17;
             this.listBox2Iteration.Location = new System.Drawing.Point(5, 5);
             this.listBox2Iteration.Margin = new System.Windows.Forms.Padding(4);
             this.listBox2Iteration.Name = "listBox2Iteration";
-            this.listBox2Iteration.Size = new System.Drawing.Size(80, 310);
+            this.listBox2Iteration.Size = new System.Drawing.Size(80, 306);
             this.listBox2Iteration.TabIndex = 8;
             // 
             // textBox1E
             // 
-            this.textBox1E.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1E.Location = new System.Drawing.Point(70, 70);
+            this.textBox1E.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox1E.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1E.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1E.Location = new System.Drawing.Point(70, 73);
             this.textBox1E.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1E.Name = "textBox1E";
-            this.textBox1E.Size = new System.Drawing.Size(155, 24);
+            this.textBox1E.Size = new System.Drawing.Size(155, 20);
             this.textBox1E.TabIndex = 1;
             // 
             // label3E
@@ -138,11 +149,13 @@
             // 
             // textBox2X
             // 
-            this.textBox2X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2X.Location = new System.Drawing.Point(70, 100);
+            this.textBox2X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox2X.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2X.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2X.Location = new System.Drawing.Point(70, 103);
             this.textBox2X.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2X.Name = "textBox2X";
-            this.textBox2X.Size = new System.Drawing.Size(155, 24);
+            this.textBox2X.Size = new System.Drawing.Size(155, 20);
             this.textBox2X.TabIndex = 2;
             // 
             // label5LogX
@@ -158,16 +171,23 @@
             // 
             // textBox3LogX
             // 
-            this.textBox3LogX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3LogX.Location = new System.Drawing.Point(70, 295);
+            this.textBox3LogX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox3LogX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3LogX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3LogX.Location = new System.Drawing.Point(70, 298);
             this.textBox3LogX.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3LogX.Name = "textBox3LogX";
             this.textBox3LogX.ReadOnly = true;
-            this.textBox3LogX.Size = new System.Drawing.Size(155, 24);
+            this.textBox3LogX.Size = new System.Drawing.Size(155, 20);
             this.textBox3LogX.TabIndex = 5;
             // 
             // button2Exit
             // 
+            this.button2Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button2Exit.FlatAppearance.BorderSize = 0;
+            this.button2Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
+            this.button2Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button2Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2Exit.Location = new System.Drawing.Point(135, 165);
             this.button2Exit.Margin = new System.Windows.Forms.Padding(4);
@@ -175,7 +195,7 @@
             this.button2Exit.Size = new System.Drawing.Size(100, 50);
             this.button2Exit.TabIndex = 4;
             this.button2Exit.Text = "Выход";
-            this.button2Exit.UseVisualStyleBackColor = true;
+            this.button2Exit.UseVisualStyleBackColor = false;
             this.button2Exit.Click += new System.EventHandler(this.button2Exit_Click);
             // 
             // label6ApproximateX
@@ -191,12 +211,14 @@
             // 
             // textBox4ApproximateX
             // 
-            this.textBox4ApproximateX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4ApproximateX.Location = new System.Drawing.Point(70, 325);
+            this.textBox4ApproximateX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox4ApproximateX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4ApproximateX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4ApproximateX.Location = new System.Drawing.Point(70, 328);
             this.textBox4ApproximateX.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4ApproximateX.Name = "textBox4ApproximateX";
             this.textBox4ApproximateX.ReadOnly = true;
-            this.textBox4ApproximateX.Size = new System.Drawing.Size(155, 24);
+            this.textBox4ApproximateX.Size = new System.Drawing.Size(155, 20);
             this.textBox4ApproximateX.TabIndex = 6;
             // 
             // label7DeltaX
@@ -212,12 +234,14 @@
             // 
             // textBox5DeltaX
             // 
-            this.textBox5DeltaX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5DeltaX.Location = new System.Drawing.Point(70, 355);
+            this.textBox5DeltaX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox5DeltaX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5DeltaX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox5DeltaX.Location = new System.Drawing.Point(70, 358);
             this.textBox5DeltaX.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5DeltaX.Name = "textBox5DeltaX";
             this.textBox5DeltaX.ReadOnly = true;
-            this.textBox5DeltaX.Size = new System.Drawing.Size(155, 24);
+            this.textBox5DeltaX.Size = new System.Drawing.Size(155, 20);
             this.textBox5DeltaX.TabIndex = 7;
             // 
             // label8T
@@ -233,17 +257,19 @@
             // 
             // panel1ListBox
             // 
+            this.panel1ListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
             this.panel1ListBox.Controls.Add(this.listBox2Iteration);
             this.panel1ListBox.Controls.Add(this.listBox1ApproximateRoot);
             this.panel1ListBox.Location = new System.Drawing.Point(330, 60);
             this.panel1ListBox.Name = "panel1ListBox";
-            this.panel1ListBox.Size = new System.Drawing.Size(295, 320);
+            this.panel1ListBox.Size = new System.Drawing.Size(295, 316);
             this.panel1ListBox.TabIndex = 18;
             // 
             // FormLab3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(639, 391);
             this.Controls.Add(this.panel1ListBox);
             this.Controls.Add(this.label8T);

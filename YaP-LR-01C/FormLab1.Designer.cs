@@ -43,8 +43,8 @@
             // labelText5L
             // 
             this.labelText5L.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelText5L.ForeColor = System.Drawing.Color.Blue;
-            this.labelText5L.Location = new System.Drawing.Point(75, 130);
+            this.labelText5L.ForeColor = System.Drawing.Color.Black;
+            this.labelText5L.Location = new System.Drawing.Point(80, 130);
             this.labelText5L.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText5L.Name = "labelText5L";
             this.labelText5L.Size = new System.Drawing.Size(16, 20);
@@ -121,7 +121,7 @@
             // labelText4A
             // 
             this.labelText4A.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelText4A.ForeColor = System.Drawing.Color.Blue;
+            this.labelText4A.ForeColor = System.Drawing.Color.Black;
             this.labelText4A.Location = new System.Drawing.Point(75, 100);
             this.labelText4A.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText4A.Name = "labelText4A";
@@ -144,7 +144,7 @@
             // labelText3X
             // 
             this.labelText3X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelText3X.ForeColor = System.Drawing.Color.Blue;
+            this.labelText3X.ForeColor = System.Drawing.Color.Black;
             this.labelText3X.Location = new System.Drawing.Point(75, 75);
             this.labelText3X.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText3X.Name = "labelText3X";

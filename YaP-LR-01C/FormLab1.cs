@@ -10,24 +10,41 @@ namespace YaP_LR_01C
             InitializeComponent();
         }
 
-        //функция вызываемая при нажатии на кнопку
+        //функция вызываемая при нажатии на кнопку расчёта
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            double x, a;
-            x = double.Parse(textBoxX.Text);
-            a = double.Parse(textBoxA.Text);
-            OutputL(x, a);
+            double a, l;
+
+            int x;
+
+            x = InputX();
+            a = InputA();
+
+            l = Calculate(x, a);
+
+            Output(l);
+        }
+
+        //функция ввода X
+        private int InputX()
+        {
+            return int.Parse(textBoxX.Text);
+        }
+
+        //функция ввода a
+        private double InputA()
+        {
+            return double.Parse(textBoxA.Text);
         }
 
         //функция вывода
-        private void OutputL(double x, double a)
+        private void Output(double l)
         {
-            double l = CalculateL(x, a);
             textBoxL.Text = l.ToString();
         }
 
         //функция расчёта условной функции
-        private double CalculateL(double x, double a)
+        private double Calculate(int x, double a)
         {
             double l;
 
@@ -59,6 +76,7 @@ namespace YaP_LR_01C
                 else
                     l = min3;
             }
+
             return l;
         }
 
