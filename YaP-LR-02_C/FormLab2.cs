@@ -17,7 +17,6 @@ namespace YaP_LR_02_C
             InitializeComponent();
         }
 
-
         //функция вызываемая при нажатии на кнопку
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
@@ -60,7 +59,6 @@ namespace YaP_LR_02_C
             listBox2FuncX.Items.Clear();
         }
 
-
         //функция вычисления значений функции в промежутке от a до b с шагом h с выводом в ListBox и расчётом количества итераций и произведения положительных значений функции
         private void Calculate(double a, double b, double h, out int n, out double multiple)
         {
@@ -96,7 +94,5 @@ namespace YaP_LR_02_C
         {
             Application.Exit();
         }
-
-        
     }
 }

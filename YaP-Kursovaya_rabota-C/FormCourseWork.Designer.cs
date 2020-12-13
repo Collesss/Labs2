@@ -37,9 +37,9 @@ namespace YaP_Kursovaya_rabota_C
             this.button4ClearList = new System.Windows.Forms.Button();
             this.button4Exit = new System.Windows.Forms.Button();
             this.label10Avg = new System.Windows.Forms.Label();
-            this.textBox2Avg = new System.Windows.Forms.TextBox();
+            this.textBox3Avg = new System.Windows.Forms.TextBox();
             this.label11Count = new System.Windows.Forms.Label();
-            this.textBox3Count = new System.Windows.Forms.TextBox();
+            this.textBox4Count = new System.Windows.Forms.TextBox();
             this.button1Add = new System.Windows.Forms.Button();
             this.label1TextBlue = new System.Windows.Forms.Label();
             this.label2TextBlue = new System.Windows.Forms.Label();
@@ -177,17 +177,17 @@ namespace YaP_Kursovaya_rabota_C
             this.label10Avg.Text = "Средее арифмитическое массива";
             this.label10Avg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2Avg
+            // textBox3Avg
             // 
-            this.textBox2Avg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
-            this.textBox2Avg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2Avg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2Avg.Location = new System.Drawing.Point(295, 423);
-            this.textBox2Avg.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2Avg.Name = "textBox2Avg";
-            this.textBox2Avg.ReadOnly = true;
-            this.textBox2Avg.Size = new System.Drawing.Size(155, 20);
-            this.textBox2Avg.TabIndex = 7;
+            this.textBox3Avg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox3Avg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3Avg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3Avg.Location = new System.Drawing.Point(295, 423);
+            this.textBox3Avg.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3Avg.Name = "textBox3Avg";
+            this.textBox3Avg.ReadOnly = true;
+            this.textBox3Avg.Size = new System.Drawing.Size(155, 20);
+            this.textBox3Avg.TabIndex = 7;
             // 
             // label11Count
             // 
@@ -200,17 +200,17 @@ namespace YaP_Kursovaya_rabota_C
             this.label11Count.Text = "Количество элементов в новом массиве";
             this.label11Count.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox3Count
+            // textBox4Count
             // 
-            this.textBox3Count.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
-            this.textBox3Count.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3Count.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3Count.Location = new System.Drawing.Point(765, 423);
-            this.textBox3Count.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3Count.Name = "textBox3Count";
-            this.textBox3Count.ReadOnly = true;
-            this.textBox3Count.Size = new System.Drawing.Size(155, 20);
-            this.textBox3Count.TabIndex = 9;
+            this.textBox4Count.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox4Count.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4Count.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4Count.Location = new System.Drawing.Point(765, 423);
+            this.textBox4Count.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4Count.Name = "textBox4Count";
+            this.textBox4Count.ReadOnly = true;
+            this.textBox4Count.Size = new System.Drawing.Size(155, 20);
+            this.textBox4Count.TabIndex = 9;
             // 
             // button1Add
             // 
@@ -421,9 +421,9 @@ namespace YaP_Kursovaya_rabota_C
             this.Controls.Add(this.label2TextBlue);
             this.Controls.Add(this.label1TextBlue);
             this.Controls.Add(this.label11Count);
-            this.Controls.Add(this.textBox3Count);
+            this.Controls.Add(this.textBox4Count);
             this.Controls.Add(this.label10Avg);
-            this.Controls.Add(this.textBox2Avg);
+            this.Controls.Add(this.textBox3Avg);
             this.Controls.Add(this.button4Exit);
             this.Controls.Add(this.button4ClearList);
             this.Controls.Add(this.listBox2Output);
@@ -454,9 +454,9 @@ namespace YaP_Kursovaya_rabota_C
         private System.Windows.Forms.Button button4ClearList;
         private System.Windows.Forms.Button button4Exit;
         private System.Windows.Forms.Label label10Avg;
-        private System.Windows.Forms.TextBox textBox2Avg;
+        private System.Windows.Forms.TextBox textBox3Avg;
         private System.Windows.Forms.Label label11Count;
-        private System.Windows.Forms.TextBox textBox3Count;
+        private System.Windows.Forms.TextBox textBox4Count;
         private System.Windows.Forms.Button button1Add;
         private System.Windows.Forms.Label label1TextBlue;
         private System.Windows.Forms.Label label2TextBlue;

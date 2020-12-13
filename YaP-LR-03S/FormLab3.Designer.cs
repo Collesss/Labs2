@@ -64,7 +64,7 @@
             this.button1Calculate.TabIndex = 3;
             this.button1Calculate.Text = "Вычислить";
             this.button1Calculate.UseVisualStyleBackColor = false;
-            this.button1Calculate.Click += new System.EventHandler(this.button1_Click);
+            this.button1Calculate.Click += new System.EventHandler(this.button1Calculate_Click);
             // 
             // listBox1ApproximateRoot
             // 

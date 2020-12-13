@@ -18,7 +18,7 @@ namespace YaP_LR_03S
         }
 
         //функция вызываемая при нажатии на кнопку
-        private void button1_Click(object sender, EventArgs e)
+        private void button1Calculate_Click(object sender, EventArgs e)
         {
             double E, X;
 
@@ -30,16 +30,16 @@ namespace YaP_LR_03S
         //функция вывода X вычисленного стандартной функцией C# и приближённой рекуретной формулой, а так же разницы между этими значениями
         public void Output(double X, double ApproximateX)
         {
-            textBox3LogX.Text = X.ToString("F2");
-            textBox4ApproximateX.Text = ApproximateX.ToString("F5");
-            textBox5DeltaX.Text = Math.Abs(X - ApproximateX).ToString("F5");
+            textBox3LogX.Text = X.ToString("F9");
+            textBox4ApproximateX.Text = ApproximateX.ToString("F9");
+            textBox5DeltaX.Text = Math.Abs(X - ApproximateX).ToString("F9");
         }
 
         //функция вывода номера итерации и значения приближённого корня в два ListBox
         public void OutputListBox(int iteration, double approximateRoot)
         {
             listBox2Iteration.Items.Add(iteration.ToString());
-            listBox1ApproximateRoot.Items.Add(approximateRoot.ToString("F5"));
+            listBox1ApproximateRoot.Items.Add(approximateRoot.ToString("F9"));
         }
 
         //функция ввода начального x и точности e

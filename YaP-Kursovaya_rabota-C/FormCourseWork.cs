@@ -77,8 +77,8 @@ namespace YaP_Kursovaya_rabota_C
         //функция вывода
         private void Output(int count, double avg)
         {
-            textBox2Avg.Text = avg.ToString("F2");
-            textBox3Count.Text = count.ToString();
+            textBox3Avg.Text = avg.ToString("F2");
+            textBox4Count.Text = count.ToString();
         }
 
         //функция вызываемая при загрузке формы
