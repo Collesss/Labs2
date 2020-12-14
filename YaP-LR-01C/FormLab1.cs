@@ -13,71 +13,94 @@ namespace YaP_LR_01C
         //функция вызываемая при нажатии на кнопку расчёта
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            double a, l;
-
-            int x;
+            double x, y, a, b, z;
 
             x = InputX();
+            y = InputY();
             a = InputA();
+            b = InputB();
 
-            l = Calculate(x, a);
+            z = Calculate(x, y, a, b);
 
-            Output(l);
+            Output(z);
         }
 
         //функция ввода X
-        private int InputX()
+        private double InputX()
         {
-            return int.Parse(textBoxX.Text);
+            return double.Parse(textBox1X.Text);
         }
 
-        //функция ввода a
+        //функция ввода Y
+        private double InputY()
+        {
+            return double.Parse(textBox2Y .Text);
+        }
+
+        //функция ввода A
         private double InputA()
         {
-            return double.Parse(textBoxA.Text);
+            return double.Parse(textBox3A.Text);
+        }
+
+        //функция ввода B
+        private double InputB()
+        {
+            return double.Parse(textBox4B.Text);
         }
 
         //функция вывода
-        private void Output(double l)
+        private void Output(double z)
         {
-            textBoxL.Text = l.ToString();
+            textBox5Z.Text = z.ToString();
         }
 
         //функция расчёта условной функции
-        private double Calculate(int x, double a)
+        private double Calculate(double x, double y, double a, double b)
         {
-            double l;
+            double z;
 
-            if (x < 0)
+            double xy = x * y;
+
+            if (xy > 0)
+                z = 1 - Math.Pow(Math.E, xy + a * b);
+            else if (xy < 0)
             {
-                double ax = Math.Pow(a, x);
+                double x3, ey, sqrtAbsLnY2;
 
-                if (x > ax)
-                    l = x;
+                x3 = Math.Pow(x, 3);
+
+                ey = Math.Pow(Math.E, y);
+
+                sqrtAbsLnY2 = Math.Sqrt(Math.Abs(Math.Log(Math.Pow(y, 2))));
+
+                double max;
+
+                if (x3 > ey)
+                    max = x3;
                 else
-                    l = ax;
+                    max = ey;
+
+                if (max > sqrtAbsLnY2)
+                    z = max;
+                else
+                    z = sqrtAbsLnY2;
             }
-            else if (x > 1)
-                l = 0;
             else
             {
-                double min1, min2, min3, min;
-                min1 = (x - a) / x;
-                min2 = Math.Sqrt(a) + x;
-                min3 = Math.Pow(Math.Sin(x), 2);
+                double min, ax;
 
-                if (min1 < min2)
-                    min = min1;
-                else
-                    min = min2;
+                ax = a * x;
 
-                if (min < min3)
-                    l = min;
+                if (ax < y)
+                    min = ax;
                 else
-                    l = min3;
+                    min = y;
+
+                z = b - min;
             }
 
-            return l;
+            return z;
         }
 
         //функция вызываемая при нажатии на кнопку выхода
