@@ -23,6 +23,16 @@ namespace YaP_Kursovaya_rabota_C
         {
             double[] nums = Input();
 
+            switch (comboBox2SelectOutput.SelectedIndex)
+            {
+                case 0:
+                    SortSelectDown(nums);
+                    break;
+                case 1:
+                    SortBubbleUp(nums);
+                    break;
+            }
+
             double avg;
             int count;
 
@@ -60,16 +70,6 @@ namespace YaP_Kursovaya_rabota_C
 
             for (int i = 0; i < nums.Length; i++)
                 nums[i] = double.Parse(listBox1Input.Items[i].ToString());
-
-            switch (comboBox2SelectOutput.SelectedIndex)
-            {
-                case 0:
-                    SortSelectDown(nums);
-                    break;
-                case 1:
-                    SortBubbleUp(nums);
-                    break;
-            }
 
             return nums;
         }

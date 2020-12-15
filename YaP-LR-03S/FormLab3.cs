@@ -27,16 +27,8 @@ namespace YaP_LR_03S
             Calculate(X, E);
         }
 
-        //функция вывода X вычисленного стандартной функцией C# и приближённой рекуретной формулой, а так же разницы между этими значениями
-        public void Output(double X, double ApproximateX)
-        {
-            textBox3LogX.Text = X.ToString("F9");
-            textBox4ApproximateX.Text = ApproximateX.ToString("F9");
-            textBox5DeltaX.Text = Math.Abs(X - ApproximateX).ToString("F9");
-        }
-
         //функция вывода номера итерации и значения приближённого корня в два ListBox
-        public void OutputListBox(int iteration, double approximateRoot)
+        public void OutputListBox(int iteration, double root)
         {
             listBox2Iteration.Items.Add(iteration.ToString());
             listBox1ApproximateRoot.Items.Add(approximateRoot.ToString("F9"));
@@ -61,27 +53,37 @@ namespace YaP_LR_03S
         {
             Clear();
 
-            double ResX = Math.Log(1 + x);
-
-            double ApproximateX = x;
-
             int n = 1;
 
-            double Root = 0;
+            double Root = x;
 
             do
             {
-                ApproximateX += Root;
-
-                OutputListBox(n, ApproximateX);
-
-                Root = Math.Pow(-1, n) * (Math.Pow(x, n + 1) / (n + 1));
+                OutputListBox(n, Root);
 
                 n++;
+
+                Root = Func(x, n);
             }
             while (Math.Abs(Root) > e);
 
-            Output(ResX, ApproximateX);
+        }
+
+        //
+        private double Func(double x, int n)
+        {
+            return Math.Pow(x, n)*Fac(n);
+        }
+
+        //функция вычисляющая факториал
+        private int Fac(int n)
+        {
+            int N = 1;
+
+            for (int i = 2; i <= n; i++)
+                N *= i;
+
+            return N;
         }
 
         //функция вызываемая при нажатии на кнопку выхода

@@ -20,14 +20,14 @@ namespace YaP_LR_02_C
         //функция вызываемая при нажатии на кнопку
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            double a, b, h, multiple;
+            double a, b, h, max;
             int n;
 
             Input(out a, out b, out h);
 
-            Calculate(a, b, h, out n, out multiple);
+            Calculate(a, b, h, out n, out max);
 
-            Output(n, multiple);
+            Output(n, max);
         }
 
         //функция ввода начального, конечного и шага
@@ -39,10 +39,10 @@ namespace YaP_LR_02_C
         }
 
         //функция вывода количества итераций и произведения положительных значений функции
-        private void Output(int n, double Multiple)
+        private void Output(int n, double max)
         {
             textBox4N.Text = n.ToString();
-            textBox5Multiple.Text = Multiple.ToString("F2");
+            textBox5Max.Text = max.ToString("F2");
         }
 
         //функция вывода аргумента и значения функции в два ListBox
@@ -60,33 +60,31 @@ namespace YaP_LR_02_C
         }
 
         //функция вычисления значений функции в промежутке от a до b с шагом h с выводом в ListBox и расчётом количества итераций и произведения положительных значений функции
-        private void Calculate(double a, double b, double h, out int n, out double multiple)
+        private void Calculate(double a, double b, double h, out int n, out double max)
         {
             Clear();
 
-            int N = (int)((b - a) / h) + 1;
+            n = (int)((b - a) / h) + 1;
 
-            double m = 1;
+            max = double.MinValue;
 
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < n; i++)
             {
                 double x = a + i * h;
                 double func = Func(x);
 
-                if (func > 0)
-                    m *= func;
+                if (func > max)
+                    max = func;
 
                 OutputListBox(x, func);
             }
 
-            n = N;
-            multiple = m;
         }
 
         //функция расчёта значения функции по указанному аргументу x
         private double Func(double x)
         {
-            return Math.Pow(x, 3) + 6 * Math.Pow(x, 2) + 19.8;
+            return 3 * Math.Pow(Math.Cos(2 * x + 1), 2);
         }
 
         //функция вызываемая при нажатии на кнопку выхода
