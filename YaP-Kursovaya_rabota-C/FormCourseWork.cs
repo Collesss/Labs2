@@ -24,33 +24,36 @@ namespace YaP_Kursovaya_rabota_C
             double[] nums = Input();
 
             double avg;
-            int count;
 
-            Calculate(nums, out avg, out count);
+            Calculate(nums, out avg);
 
-            Output(count, avg);
+            Output(nums.Length, avg);
         }
 
 
         //функция расчитывающая среднее арифметическое массива и выводящая элементы массива которые меньше среднего арифметического в ListBox
-        private void Calculate(double[] nums, out double avg, out int countLessAvg)
+        private void Calculate(double[] nums, out double avgPositive)
         {
             listBox2Output.Items.Clear();
 
-            countLessAvg = 0;
-            avg = 0;
+            avgPositive = 0;
+
+            int countAvgPositive = 0;
 
             for (int i = 0; i < nums.Length; i++)
-                avg += nums[i];
-
-            avg /= nums.Length;
-
-            for (int i = 0; i < nums.Length; i++)
-                if (nums[i] < avg)
+                if (nums[i] > 0)
                 {
-                    countLessAvg++;
-                    listBox2Output.Items.Add(nums[i].ToString("F2"));
+                    avgPositive += nums[i];
+                    countAvgPositive++;
                 }
+
+            avgPositive /= countAvgPositive;
+
+            for (int i = 0; i < nums.Length; i++)
+                if (nums[i] > avgPositive)
+                    listBox2Output.Items.Add(avgPositive.ToString("F2"));
+                else
+                    listBox2Output.Items.Add(nums[i].ToString("F2"));
         }
 
         //функция ввода
