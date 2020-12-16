@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label3Text.Text" xml:space="preserve">
+    <value>Ввести одномерный массив и вывести среднее арифмитеческое положительных элементов массива 
+и вывести все элементы входного массива с заменой элементов на среднее арифметическое положительных 
+элементов которое больше его которые меньше среднего арифметического массива
+и количество элементов в полученном массиве и среднее арифметическое массива</value>
+  </data>
 </root>

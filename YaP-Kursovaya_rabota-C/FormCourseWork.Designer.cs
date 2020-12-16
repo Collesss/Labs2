@@ -29,6 +29,7 @@ namespace YaP_Kursovaya_rabota_C
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCourseWork));
             this.listBox1Input = new System.Windows.Forms.ListBox();
             this.textBox1Num = new System.Windows.Forms.TextBox();
             this.label4Num = new System.Windows.Forms.Label();
@@ -169,13 +170,13 @@ namespace YaP_Kursovaya_rabota_C
             // label10Avg
             // 
             this.label10Avg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10Avg.Location = new System.Drawing.Point(20, 420);
+            this.label10Avg.Location = new System.Drawing.Point(13, 416);
             this.label10Avg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10Avg.Name = "label10Avg";
-            this.label10Avg.Size = new System.Drawing.Size(270, 24);
+            this.label10Avg.Size = new System.Drawing.Size(267, 38);
             this.label10Avg.TabIndex = 8;
-            this.label10Avg.Text = "Средее арифмитическое массива";
-            this.label10Avg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label10Avg.Text = "Средее арифмитическое положительных элементов массива";
+            this.label10Avg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox3Avg
             // 
@@ -261,9 +262,7 @@ namespace YaP_Kursovaya_rabota_C
             this.label3Text.Name = "label3Text";
             this.label3Text.Size = new System.Drawing.Size(630, 60);
             this.label3Text.TabIndex = 14;
-            this.label3Text.Text = "Ввести одномерный массив ручным вводом\r\nи вывести элементы массива которые меньше" +
-    " среднего арифметического массива\r\nи количество элементов в полученном массиве и" +
-    " среднее арифметическое массива";
+            this.label3Text.Text = resources.GetString("label3Text.Text");
             this.label3Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8InputArray
