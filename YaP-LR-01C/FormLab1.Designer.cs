@@ -48,20 +48,21 @@
             // 
             this.labelText5L.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelText5L.ForeColor = System.Drawing.Color.Black;
-            this.labelText5L.Location = new System.Drawing.Point(72, 184);
+            this.labelText5L.Location = new System.Drawing.Point(100, 120);
             this.labelText5L.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelText5L.Name = "labelText5L";
             this.labelText5L.Size = new System.Drawing.Size(25, 20);
             this.labelText5L.TabIndex = 8;
             this.labelText5L.Text = "z:";
+            this.labelText5L.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox5Z
             // 
-            this.textBox5Z.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox5Z.BackColor = System.Drawing.Color.Silver;
             this.textBox5Z.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5Z.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5Z.ForeColor = System.Drawing.Color.Black;
-            this.textBox5Z.Location = new System.Drawing.Point(105, 184);
+            this.textBox5Z.Location = new System.Drawing.Point(130, 120);
             this.textBox5Z.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5Z.Name = "textBox5Z";
             this.textBox5Z.ReadOnly = true;
@@ -70,14 +71,14 @@
             // 
             // buttonCalculate
             // 
-            this.buttonCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.buttonCalculate.BackColor = System.Drawing.Color.DarkGray;
             this.buttonCalculate.FlatAppearance.BorderSize = 0;
-            this.buttonCalculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.buttonCalculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.buttonCalculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.buttonCalculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.buttonCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCalculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonCalculate.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalculate.Location = new System.Drawing.Point(278, 83);
+            this.buttonCalculate.Location = new System.Drawing.Point(320, 60);
             this.buttonCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalculate.Name = "buttonCalculate";
             this.buttonCalculate.Size = new System.Drawing.Size(110, 50);
@@ -112,11 +113,11 @@
             // 
             // textBox2Y
             // 
-            this.textBox2Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox2Y.BackColor = System.Drawing.Color.DarkGray;
             this.textBox2Y.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2Y.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2Y.ForeColor = System.Drawing.Color.Black;
-            this.textBox2Y.Location = new System.Drawing.Point(105, 100);
+            this.textBox2Y.Location = new System.Drawing.Point(60, 90);
             this.textBox2Y.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2Y.Name = "textBox2Y";
             this.textBox2Y.Size = new System.Drawing.Size(100, 20);
@@ -126,20 +127,21 @@
             // 
             this.label4Y.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4Y.ForeColor = System.Drawing.Color.Black;
-            this.label4Y.Location = new System.Drawing.Point(75, 100);
+            this.label4Y.Location = new System.Drawing.Point(30, 90);
             this.label4Y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4Y.Name = "label4Y";
-            this.label4Y.Size = new System.Drawing.Size(23, 20);
+            this.label4Y.Size = new System.Drawing.Size(25, 20);
             this.label4Y.TabIndex = 7;
             this.label4Y.Text = "y:";
+            this.label4Y.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox1X
             // 
-            this.textBox1X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox1X.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1X.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1X.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1X.ForeColor = System.Drawing.Color.Black;
-            this.textBox1X.Location = new System.Drawing.Point(105, 75);
+            this.textBox1X.Location = new System.Drawing.Point(60, 61);
             this.textBox1X.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1X.Name = "textBox1X";
             this.textBox1X.Size = new System.Drawing.Size(100, 20);
@@ -149,24 +151,25 @@
             // 
             this.label3X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3X.ForeColor = System.Drawing.Color.Black;
-            this.label3X.Location = new System.Drawing.Point(75, 75);
+            this.label3X.Location = new System.Drawing.Point(30, 60);
             this.label3X.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3X.Name = "label3X";
-            this.label3X.Size = new System.Drawing.Size(20, 20);
+            this.label3X.Size = new System.Drawing.Size(25, 20);
             this.label3X.TabIndex = 6;
             this.label3X.Text = "x:";
+            this.label3X.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // buttonExit
             // 
-            this.buttonExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.buttonExit.BackColor = System.Drawing.Color.DarkGray;
             this.buttonExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonExit.FlatAppearance.BorderSize = 0;
-            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonExit.ForeColor = System.Drawing.Color.Black;
-            this.buttonExit.Location = new System.Drawing.Point(407, 83);
+            this.buttonExit.Location = new System.Drawing.Point(440, 60);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(110, 50);
@@ -177,11 +180,11 @@
             // 
             // textBox4B
             // 
-            this.textBox4B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox4B.BackColor = System.Drawing.Color.DarkGray;
             this.textBox4B.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4B.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4B.ForeColor = System.Drawing.Color.Black;
-            this.textBox4B.Location = new System.Drawing.Point(105, 156);
+            this.textBox4B.Location = new System.Drawing.Point(200, 90);
             this.textBox4B.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4B.Name = "textBox4B";
             this.textBox4B.Size = new System.Drawing.Size(100, 20);
@@ -191,20 +194,21 @@
             // 
             this.label6B.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6B.ForeColor = System.Drawing.Color.Black;
-            this.label6B.Location = new System.Drawing.Point(70, 156);
+            this.label6B.Location = new System.Drawing.Point(170, 90);
             this.label6B.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6B.Name = "label6B";
             this.label6B.Size = new System.Drawing.Size(25, 20);
             this.label6B.TabIndex = 13;
             this.label6B.Text = "b:";
+            this.label6B.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox3A
             // 
-            this.textBox3A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox3A.BackColor = System.Drawing.Color.DarkGray;
             this.textBox3A.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3A.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3A.ForeColor = System.Drawing.Color.Black;
-            this.textBox3A.Location = new System.Drawing.Point(105, 128);
+            this.textBox3A.Location = new System.Drawing.Point(200, 60);
             this.textBox3A.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3A.Name = "textBox3A";
             this.textBox3A.Size = new System.Drawing.Size(100, 20);
@@ -214,19 +218,20 @@
             // 
             this.label5A.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5A.ForeColor = System.Drawing.Color.Black;
-            this.label5A.Location = new System.Drawing.Point(75, 128);
+            this.label5A.Location = new System.Drawing.Point(170, 60);
             this.label5A.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5A.Name = "label5A";
-            this.label5A.Size = new System.Drawing.Size(23, 20);
+            this.label5A.Size = new System.Drawing.Size(25, 20);
             this.label5A.TabIndex = 14;
             this.label5A.Text = "a:";
+            this.label5A.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormLab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(584, 223);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.ClientSize = new System.Drawing.Size(584, 161);
             this.Controls.Add(this.textBox4B);
             this.Controls.Add(this.label6B);
             this.Controls.Add(this.textBox3A);

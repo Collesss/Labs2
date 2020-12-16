@@ -52,7 +52,7 @@
             // 
             // listBox2FuncX
             // 
-            this.listBox2FuncX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox2FuncX.BackColor = System.Drawing.Color.LightGray;
             this.listBox2FuncX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox2FuncX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox2FuncX.FormattingEnabled = true;
@@ -77,7 +77,7 @@
             // 
             // textBox1A
             // 
-            this.textBox1A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox1A.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1A.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1A.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1A.Location = new System.Drawing.Point(600, 28);
@@ -88,10 +88,10 @@
             // 
             // button1Calculate
             // 
-            this.button1Calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button1Calculate.BackColor = System.Drawing.Color.DarkGray;
             this.button1Calculate.FlatAppearance.BorderSize = 0;
-            this.button1Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button1Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button1Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1Calculate.Location = new System.Drawing.Point(490, 370);
@@ -105,10 +105,10 @@
             // 
             // button2Exit
             // 
-            this.button2Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button2Exit.BackColor = System.Drawing.Color.DarkGray;
             this.button2Exit.FlatAppearance.BorderSize = 0;
-            this.button2Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button2Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button2Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button2Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2Exit.Location = new System.Drawing.Point(595, 370);
@@ -156,7 +156,7 @@
             // 
             // textBox2B
             // 
-            this.textBox2B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox2B.BackColor = System.Drawing.Color.DarkGray;
             this.textBox2B.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2B.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2B.Location = new System.Drawing.Point(600, 58);
@@ -178,7 +178,7 @@
             // 
             // textBox3H
             // 
-            this.textBox3H.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox3H.BackColor = System.Drawing.Color.DarkGray;
             this.textBox3H.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3H.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3H.Location = new System.Drawing.Point(600, 88);
@@ -200,7 +200,7 @@
             // 
             // textBox4N
             // 
-            this.textBox4N.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox4N.BackColor = System.Drawing.Color.Silver;
             this.textBox4N.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4N.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4N.Location = new System.Drawing.Point(600, 118);
@@ -223,7 +223,7 @@
             // 
             // textBox5Max
             // 
-            this.textBox5Max.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox5Max.BackColor = System.Drawing.Color.Silver;
             this.textBox5Max.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5Max.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5Max.Location = new System.Drawing.Point(515, 320);
@@ -247,7 +247,7 @@
             // 
             // listBox1ArgX
             // 
-            this.listBox1ArgX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox1ArgX.BackColor = System.Drawing.Color.LightGray;
             this.listBox1ArgX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1ArgX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox1ArgX.FormattingEnabled = true;
@@ -272,7 +272,7 @@
             // 
             // panel1ListBox
             // 
-            this.panel1ListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.panel1ListBox.BackColor = System.Drawing.Color.Gray;
             this.panel1ListBox.Controls.Add(this.listBox1ArgX);
             this.panel1ListBox.Controls.Add(this.listBox2FuncX);
             this.panel1ListBox.Location = new System.Drawing.Point(10, 105);
@@ -284,7 +284,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(764, 431);
             this.Controls.Add(this.panel1ListBox);
             this.Controls.Add(this.label2Func);
