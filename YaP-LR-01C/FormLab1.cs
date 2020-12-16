@@ -13,28 +13,26 @@ namespace YaP_LR_01C
         //функция вызываемая при нажатии на кнопку расчёта
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            double a, l;
-
-            int x;
+            double x, z, l;
 
             x = InputX();
-            a = InputA();
+            z = InputZ();
 
-            l = Calculate(x, a);
+            l = Calculate(x, z);
 
             Output(l);
         }
 
         //функция ввода X
-        private int InputX()
+        private double InputX()
         {
-            return int.Parse(textBoxX.Text);
+            return double.Parse(textBoxX.Text);
         }
 
-        //функция ввода a
-        private double InputA()
+        //функция ввода z
+        private double InputZ()
         {
-            return double.Parse(textBoxA.Text);
+            return double.Parse(textBoxZ.Text);
         }
 
         //функция вывода
@@ -44,38 +42,37 @@ namespace YaP_LR_01C
         }
 
         //функция расчёта условной функции
-        private double Calculate(int x, double a)
+        private double Calculate(double x, double z)
         {
             double l;
 
-            if (x < 0)
+            if (z < 0 && x < 0)
             {
-                double ax = Math.Pow(a, x);
-
-                if (x > ax)
+                if (x > z)
+                    l = z;
+                else
                     l = x;
-                else
-                    l = ax;
             }
-            else if (x > 1)
-                l = 0;
-            else
+            else if (z > 0 && x > 0)
             {
-                double min1, min2, min3, min;
-                min1 = (x - a) / x;
-                min2 = Math.Sqrt(a) + x;
-                min3 = Math.Pow(Math.Sin(x), 2);
+                double x3, sqrtXplusZ, cosXZ, max;
 
-                if (min1 < min2)
-                    min = min1;
-                else
-                    min = min2;
+                x3 = Math.Pow(x, 3);
+                sqrtXplusZ = Math.Sqrt(x + z);
+                cosXZ = Math.Cos(x * z);
 
-                if (min < min3)
-                    l = min;
+                if (x3 > sqrtXplusZ)
+                    max = x3;
                 else
-                    l = min3;
+                    max = sqrtXplusZ;
+
+                if (max > cosXZ)
+                    l = max;
+                else
+                    l = cosXZ;
             }
+            else
+                l = x * z;
 
             return l;
         }
