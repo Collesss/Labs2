@@ -58,7 +58,7 @@
             // 
             // textBox5Z
             // 
-            this.textBox5Z.BackColor = System.Drawing.Color.Silver;
+            this.textBox5Z.BackColor = System.Drawing.Color.LightGray;
             this.textBox5Z.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5Z.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5Z.ForeColor = System.Drawing.Color.Black;

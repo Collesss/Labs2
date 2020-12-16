@@ -62,7 +62,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // listBox1Input
             // 
-            this.listBox1Input.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox1Input.BackColor = System.Drawing.Color.LightGray;
             this.listBox1Input.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1Input.ColumnWidth = 50;
             this.listBox1Input.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -79,7 +79,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox1Num
             // 
-            this.textBox1Num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox1Num.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1Num.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1Num.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1Num.Location = new System.Drawing.Point(250, 31);
@@ -101,10 +101,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button3Calculate
             // 
-            this.button3Calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button3Calculate.BackColor = System.Drawing.Color.DarkGray;
             this.button3Calculate.FlatAppearance.BorderSize = 0;
-            this.button3Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button3Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button3Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button3Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button3Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3Calculate.Location = new System.Drawing.Point(580, 145);
@@ -118,7 +118,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // listBox2Output
             // 
-            this.listBox2Output.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.listBox2Output.BackColor = System.Drawing.Color.LightGray;
             this.listBox2Output.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox2Output.ColumnWidth = 50;
             this.listBox2Output.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -135,10 +135,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button4ClearList
             // 
-            this.button4ClearList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button4ClearList.BackColor = System.Drawing.Color.DarkGray;
             this.button4ClearList.FlatAppearance.BorderSize = 0;
-            this.button4ClearList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button4ClearList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button4ClearList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button4ClearList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button4ClearList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4ClearList.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4ClearList.Location = new System.Drawing.Point(685, 145);
@@ -152,10 +152,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button4Exit
             // 
-            this.button4Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button4Exit.BackColor = System.Drawing.Color.DarkGray;
             this.button4Exit.FlatAppearance.BorderSize = 0;
-            this.button4Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button4Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button4Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button4Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button4Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4Exit.Location = new System.Drawing.Point(790, 145);
@@ -180,7 +180,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox3Avg
             // 
-            this.textBox3Avg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox3Avg.BackColor = System.Drawing.Color.LightGray;
             this.textBox3Avg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3Avg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3Avg.Location = new System.Drawing.Point(295, 423);
@@ -203,7 +203,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox4Count
             // 
-            this.textBox4Count.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
+            this.textBox4Count.BackColor = System.Drawing.Color.LightGray;
             this.textBox4Count.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4Count.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4Count.Location = new System.Drawing.Point(765, 423);
@@ -215,10 +215,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button1Add
             // 
-            this.button1Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button1Add.BackColor = System.Drawing.Color.DarkGray;
             this.button1Add.FlatAppearance.BorderSize = 0;
-            this.button1Add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button1Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button1Add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1Add.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1Add.Location = new System.Drawing.Point(415, 15);
@@ -289,7 +289,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // comboBox1SelectInput
             // 
-            this.comboBox1SelectInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.comboBox1SelectInput.BackColor = System.Drawing.Color.DarkGray;
             this.comboBox1SelectInput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1SelectInput.DropDownWidth = 350;
             this.comboBox1SelectInput.FormattingEnabled = true;
@@ -304,7 +304,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // comboBox2SelectOutput
             // 
-            this.comboBox2SelectOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.comboBox2SelectOutput.BackColor = System.Drawing.Color.DarkGray;
             this.comboBox2SelectOutput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2SelectOutput.FormattingEnabled = true;
             this.comboBox2SelectOutput.Items.AddRange(new object[] {
@@ -364,10 +364,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button2FillArrayRand
             // 
-            this.button2FillArrayRand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button2FillArrayRand.BackColor = System.Drawing.Color.DarkGray;
             this.button2FillArrayRand.FlatAppearance.BorderSize = 0;
-            this.button2FillArrayRand.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
-            this.button2FillArrayRand.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
+            this.button2FillArrayRand.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button2FillArrayRand.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2FillArrayRand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2FillArrayRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2FillArrayRand.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -393,7 +393,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox2CountRand
             // 
-            this.textBox2CountRand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.textBox2CountRand.BackColor = System.Drawing.Color.DarkGray;
             this.textBox2CountRand.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2CountRand.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2CountRand.Location = new System.Drawing.Point(250, 31);
@@ -406,7 +406,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(934, 461);
             this.Controls.Add(this.groupBox2InputRand);
             this.Controls.Add(this.groupBox1InputKeyBoard);

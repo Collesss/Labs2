@@ -200,7 +200,7 @@
             // 
             // textBox4N
             // 
-            this.textBox4N.BackColor = System.Drawing.Color.Silver;
+            this.textBox4N.BackColor = System.Drawing.Color.LightGray;
             this.textBox4N.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4N.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4N.Location = new System.Drawing.Point(600, 118);
@@ -223,7 +223,7 @@
             // 
             // textBox5Max
             // 
-            this.textBox5Max.BackColor = System.Drawing.Color.Silver;
+            this.textBox5Max.BackColor = System.Drawing.Color.LightGray;
             this.textBox5Max.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5Max.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5Max.Location = new System.Drawing.Point(515, 320);
