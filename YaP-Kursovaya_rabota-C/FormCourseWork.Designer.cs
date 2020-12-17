@@ -36,8 +36,8 @@ namespace YaP_Kursovaya_rabota_C
             this.listBox2Output = new System.Windows.Forms.ListBox();
             this.button4ClearList = new System.Windows.Forms.Button();
             this.button4Exit = new System.Windows.Forms.Button();
-            this.label10Avg = new System.Windows.Forms.Label();
-            this.textBox3Avg = new System.Windows.Forms.TextBox();
+            this.label10Sum = new System.Windows.Forms.Label();
+            this.textBox3Sum = new System.Windows.Forms.TextBox();
             this.label11Count = new System.Windows.Forms.Label();
             this.textBox4Count = new System.Windows.Forms.TextBox();
             this.button1Add = new System.Windows.Forms.Button();
@@ -78,13 +78,13 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox1Num
             // 
-            this.textBox1Num.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
-            this.textBox1Num.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1Num.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox1Num.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1Num.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1Num.Location = new System.Drawing.Point(250, 31);
+            this.textBox1Num.Location = new System.Drawing.Point(252, 26);
             this.textBox1Num.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1Num.Name = "textBox1Num";
-            this.textBox1Num.Size = new System.Drawing.Size(155, 20);
+            this.textBox1Num.Size = new System.Drawing.Size(155, 27);
             this.textBox1Num.TabIndex = 1;
             // 
             // label4Num
@@ -100,11 +100,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button3Calculate
             // 
-            this.button3Calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button3Calculate.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button3Calculate.FlatAppearance.BorderSize = 0;
             this.button3Calculate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
             this.button3Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
-            this.button3Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3Calculate.Location = new System.Drawing.Point(580, 145);
             this.button3Calculate.Margin = new System.Windows.Forms.Padding(4);
@@ -134,11 +133,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button4ClearList
             // 
-            this.button4ClearList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button4ClearList.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button4ClearList.FlatAppearance.BorderSize = 0;
             this.button4ClearList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
             this.button4ClearList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
-            this.button4ClearList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4ClearList.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4ClearList.Location = new System.Drawing.Point(685, 145);
             this.button4ClearList.Margin = new System.Windows.Forms.Padding(4);
@@ -151,11 +149,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button4Exit
             // 
-            this.button4Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button4Exit.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button4Exit.FlatAppearance.BorderSize = 0;
             this.button4Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
             this.button4Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
-            this.button4Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4Exit.Location = new System.Drawing.Point(790, 145);
             this.button4Exit.Margin = new System.Windows.Forms.Padding(4);
@@ -166,33 +163,33 @@ namespace YaP_Kursovaya_rabota_C
             this.button4Exit.UseVisualStyleBackColor = false;
             this.button4Exit.Click += new System.EventHandler(this.button5Exit_Click);
             // 
-            // label10Avg
+            // label10Sum
             // 
-            this.label10Avg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10Avg.Location = new System.Drawing.Point(20, 420);
-            this.label10Avg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10Avg.Name = "label10Avg";
-            this.label10Avg.Size = new System.Drawing.Size(270, 24);
-            this.label10Avg.TabIndex = 8;
-            this.label10Avg.Text = "Средее арифмитическое массива";
-            this.label10Avg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label10Sum.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10Sum.Location = new System.Drawing.Point(0, 420);
+            this.label10Sum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10Sum.Name = "label10Sum";
+            this.label10Sum.Size = new System.Drawing.Size(290, 51);
+            this.label10Sum.TabIndex = 8;
+            this.label10Sum.Text = "Сумма элементов между первым и последним положительным элементом";
+            this.label10Sum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox3Avg
+            // textBox3Sum
             // 
-            this.textBox3Avg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
-            this.textBox3Avg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3Avg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3Avg.Location = new System.Drawing.Point(295, 423);
-            this.textBox3Avg.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3Avg.Name = "textBox3Avg";
-            this.textBox3Avg.ReadOnly = true;
-            this.textBox3Avg.Size = new System.Drawing.Size(155, 20);
-            this.textBox3Avg.TabIndex = 7;
+            this.textBox3Sum.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox3Sum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3Sum.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3Sum.Location = new System.Drawing.Point(297, 431);
+            this.textBox3Sum.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3Sum.Name = "textBox3Sum";
+            this.textBox3Sum.ReadOnly = true;
+            this.textBox3Sum.Size = new System.Drawing.Size(155, 27);
+            this.textBox3Sum.TabIndex = 7;
             // 
             // label11Count
             // 
             this.label11Count.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11Count.Location = new System.Drawing.Point(460, 420);
+            this.label11Count.Location = new System.Drawing.Point(460, 431);
             this.label11Count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11Count.Name = "label11Count";
             this.label11Count.Size = new System.Drawing.Size(300, 24);
@@ -202,23 +199,22 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox4Count
             // 
-            this.textBox4Count.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(177)))), ((int)(((byte)(238)))));
-            this.textBox4Count.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4Count.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox4Count.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4Count.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4Count.Location = new System.Drawing.Point(765, 423);
+            this.textBox4Count.Location = new System.Drawing.Point(766, 431);
             this.textBox4Count.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4Count.Name = "textBox4Count";
             this.textBox4Count.ReadOnly = true;
-            this.textBox4Count.Size = new System.Drawing.Size(155, 20);
+            this.textBox4Count.Size = new System.Drawing.Size(155, 27);
             this.textBox4Count.TabIndex = 9;
             // 
             // button1Add
             // 
-            this.button1Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button1Add.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button1Add.FlatAppearance.BorderSize = 0;
             this.button1Add.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
             this.button1Add.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
-            this.button1Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1Add.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1Add.Location = new System.Drawing.Point(415, 15);
             this.button1Add.Margin = new System.Windows.Forms.Padding(4);
@@ -261,9 +257,8 @@ namespace YaP_Kursovaya_rabota_C
             this.label3Text.Name = "label3Text";
             this.label3Text.Size = new System.Drawing.Size(630, 60);
             this.label3Text.TabIndex = 14;
-            this.label3Text.Text = "Ввести одномерный массив ручным вводом\r\nи вывести элементы массива которые меньше" +
-    " среднего арифметического массива\r\nи количество элементов в полученном массиве и" +
-    " среднее арифметическое массива";
+            this.label3Text.Text = "Ввести одномерный массив \r\nи вывести элементы массива которые находятся между пер" +
+    "вым и последним\r\nположительным элементом, а так же их сумму и количество";
             this.label3Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8InputArray
@@ -290,7 +285,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // comboBox1SelectInput
             // 
-            this.comboBox1SelectInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.comboBox1SelectInput.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.comboBox1SelectInput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1SelectInput.DropDownWidth = 350;
             this.comboBox1SelectInput.FormattingEnabled = true;
@@ -305,7 +300,7 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // comboBox2SelectOutput
             // 
-            this.comboBox2SelectOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
+            this.comboBox2SelectOutput.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.comboBox2SelectOutput.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2SelectOutput.FormattingEnabled = true;
             this.comboBox2SelectOutput.Items.AddRange(new object[] {
@@ -365,11 +360,10 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // button2FillArrayRand
             // 
-            this.button2FillArrayRand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(156)))), ((int)(((byte)(177)))));
+            this.button2FillArrayRand.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button2FillArrayRand.FlatAppearance.BorderSize = 0;
             this.button2FillArrayRand.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(137)))), ((int)(((byte)(155)))));
             this.button2FillArrayRand.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(176)))), ((int)(((byte)(199)))));
-            this.button2FillArrayRand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2FillArrayRand.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2FillArrayRand.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2FillArrayRand.Location = new System.Drawing.Point(415, 15);
@@ -394,21 +388,21 @@ namespace YaP_Kursovaya_rabota_C
             // 
             // textBox2CountRand
             // 
-            this.textBox2CountRand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(167)))), ((int)(((byte)(183)))));
-            this.textBox2CountRand.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2CountRand.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox2CountRand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2CountRand.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2CountRand.Location = new System.Drawing.Point(250, 31);
+            this.textBox2CountRand.Location = new System.Drawing.Point(252, 26);
             this.textBox2CountRand.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2CountRand.Name = "textBox2CountRand";
-            this.textBox2CountRand.Size = new System.Drawing.Size(155, 20);
+            this.textBox2CountRand.Size = new System.Drawing.Size(155, 27);
             this.textBox2CountRand.TabIndex = 1;
             // 
             // FormCourseWork
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(208)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(934, 461);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(934, 478);
             this.Controls.Add(this.groupBox2InputRand);
             this.Controls.Add(this.groupBox1InputKeyBoard);
             this.Controls.Add(this.label7SelectOutput);
@@ -422,8 +416,8 @@ namespace YaP_Kursovaya_rabota_C
             this.Controls.Add(this.label1TextBlue);
             this.Controls.Add(this.label11Count);
             this.Controls.Add(this.textBox4Count);
-            this.Controls.Add(this.label10Avg);
-            this.Controls.Add(this.textBox3Avg);
+            this.Controls.Add(this.label10Sum);
+            this.Controls.Add(this.textBox3Sum);
             this.Controls.Add(this.button4Exit);
             this.Controls.Add(this.button4ClearList);
             this.Controls.Add(this.listBox2Output);
@@ -453,8 +447,8 @@ namespace YaP_Kursovaya_rabota_C
         private System.Windows.Forms.ListBox listBox2Output;
         private System.Windows.Forms.Button button4ClearList;
         private System.Windows.Forms.Button button4Exit;
-        private System.Windows.Forms.Label label10Avg;
-        private System.Windows.Forms.TextBox textBox3Avg;
+        private System.Windows.Forms.Label label10Sum;
+        private System.Windows.Forms.TextBox textBox3Sum;
         private System.Windows.Forms.Label label11Count;
         private System.Windows.Forms.TextBox textBox4Count;
         private System.Windows.Forms.Button button1Add;

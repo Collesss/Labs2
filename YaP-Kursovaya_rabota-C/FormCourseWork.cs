@@ -21,64 +21,79 @@ namespace YaP_Kursovaya_rabota_C
         //функция вызываемая при нажатии на кнопку
         private void button3Calculate_Click(object sender, EventArgs e)
         {
-            double[] nums = Input();
+            int[] numsInput, numsOutput;
 
-            double avg;
-            int count;
+            int sum, count;
 
-            Calculate(nums, out avg, out count);
+            numsInput = Input();
 
-            Output(count, avg);
-        }
-
-
-        //функция расчитывающая среднее арифметическое массива и выводящая элементы массива которые меньше среднего арифметического в ListBox
-        private void Calculate(double[] nums, out double avg, out int countLessAvg)
-        {
-            listBox2Output.Items.Clear();
-
-            countLessAvg = 0;
-            avg = 0;
-
-            for (int i = 0; i < nums.Length; i++)
-                avg += nums[i];
-
-            avg /= nums.Length;
-
-            for (int i = 0; i < nums.Length; i++)
-                if (nums[i] < avg)
-                {
-                    countLessAvg++;
-                    listBox2Output.Items.Add(nums[i].ToString("F2"));
-                }
-        }
-
-        //функция ввода
-        private double[] Input()
-        {
-            double[] nums = new double[listBox1Input.Items.Count];
-
-            for (int i = 0; i < nums.Length; i++)
-                nums[i] = double.Parse(listBox1Input.Items[i].ToString());
+            numsOutput = Calculate(numsInput, out sum, out count);
 
             switch (comboBox2SelectOutput.SelectedIndex)
             {
                 case 0:
-                    SortSelectDown(nums);
+                    SortSelectDown(numsOutput);
                     break;
                 case 1:
-                    SortBubbleUp(nums);
+                    SortBubbleUp(numsOutput);
                     break;
             }
+
+            Output(numsOutput, count, sum);
+        }
+
+
+        //функция расчитывающая сумму элементов массива находящихся между первым положительным и последним положительным элементов массива и возвращающая массив который содержит элемнты между первым и последним положительным элементов входного массива
+        private int[] Calculate(int[] nums, out int sum, out int countElNewArr)
+        {
+            listBox2Output.Items.Clear();
+
+            sum = 0;
+
+            int indexFirstPositive, indexLastPositive;
+
+            indexFirstPositive = -1;
+            indexLastPositive = -1;
+
+            for (int i = 0; i < nums.Length; i++)
+                if (nums[i] > 0)
+                {
+                    if (indexFirstPositive == -1)
+                        indexFirstPositive = i;
+                    indexLastPositive = i;
+                }
+
+            for (int i = indexFirstPositive + 1; i < indexLastPositive; i++)
+                sum += nums[i];
+
+            countElNewArr = indexLastPositive - indexFirstPositive - 1;
+
+            int[] outputArr = new int[countElNewArr];
+
+            Array.Copy(nums, indexFirstPositive + 1, outputArr, 0, countElNewArr);
+
+            return outputArr;
+        }
+
+        //функция ввода
+        private int[] Input()
+        {
+            int[] nums = new int[listBox1Input.Items.Count];
+
+            for (int i = 0; i < nums.Length; i++)
+                nums[i] = int.Parse(listBox1Input.Items[i].ToString());
 
             return nums;
         }
 
         //функция вывода
-        private void Output(int count, double avg)
+        private void Output(int[] nums, int count, int sum)
         {
-            textBox3Avg.Text = avg.ToString("F2");
+            textBox3Sum.Text = sum.ToString();
             textBox4Count.Text = count.ToString();
+
+            for(int i = 0; i < nums.Length; i++)
+                listBox2Output.Items.Add(nums[i].ToString());
         }
 
         //функция вызываемая при загрузке формы
@@ -104,20 +119,20 @@ namespace YaP_Kursovaya_rabota_C
         }
 
         //функция сортировки пузырьком по возрастанию
-        private void SortBubbleUp(double[] nums)
+        private void SortBubbleUp(int[] nums)
         {
             for (int i = 0; i < nums.Length - 1; i++)
                 for (int j = 0; j < nums.Length - 1 - i; j++)
                     if (nums[j] > nums[j + 1])
                     {
-                        double k = nums[j];
+                        int k = nums[j];
                         nums[j] = nums[j + 1];
                         nums[j + 1] = k;
                     }
         }
 
         //функция сортировки выбором по убыванию
-        private void SortSelectDown(double[] nums)
+        private void SortSelectDown(int[] nums)
         {
             for (int i = 0; i < nums.Length; i++)
             {
@@ -129,7 +144,7 @@ namespace YaP_Kursovaya_rabota_C
 
                 if (max != i)
                 {
-                    double k = nums[i];
+                    int k = nums[i];
                     nums[i] = nums[max];
                     nums[max] = k;
                 }
@@ -142,11 +157,11 @@ namespace YaP_Kursovaya_rabota_C
             int countRand = int.Parse(textBox2CountRand.Text);
 
             Random random = new Random();
-
+            
             for (int i = 0; i < countRand; i++)
             {
-                double numAdd = (random.NextDouble() - 0.5) * 100;
-                listBox1Input.Items.Add(numAdd.ToString("F2"));
+                int numAdd = (int)((random.NextDouble() - 0.5) * 30);
+                listBox1Input.Items.Add(numAdd.ToString());
             }
         }
         

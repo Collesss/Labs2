@@ -20,11 +20,11 @@ namespace YaP_LR_03S
         //функция вызываемая при нажатии на кнопку
         private void button1Calculate_Click(object sender, EventArgs e)
         {
-            double E, X;
+            double E;
 
-            Input(out X, out E);
+            E = InputE();
 
-            Calculate(X, E);
+            Calculate(E);
         }
 
         //функция вывода X вычисленного стандартной функцией C# и приближённой рекуретной формулой, а так же разницы между этими значениями
@@ -43,10 +43,9 @@ namespace YaP_LR_03S
         }
 
         //функция ввода начального x и точности e
-        public void Input(out double x, out double e)
+        public double InputE()
         {
-            x = double.Parse(textBox2X.Text);
-            e = double.Parse(textBox1E.Text);
+            return double.Parse(textBox1E.Text);
         }
 
         //функция очистки списков
@@ -57,13 +56,13 @@ namespace YaP_LR_03S
         }
 
         //функция вычисления суммы значений рекурентной формулы с точностью e
-        private void Calculate(double x, double e)
+        private void Calculate(double e)
         {
             Clear();
 
-            double ResX = Math.Log(1 + x);
+            double ResX = Math.Log(2);
 
-            double ApproximateX = x;
+            double ApproximateX = 1;
 
             int n = 1;
 
@@ -75,7 +74,7 @@ namespace YaP_LR_03S
 
                 OutputListBox(n, ApproximateX);
 
-                Root = Math.Pow(-1, n) * (Math.Pow(x, n + 1) / (n + 1));
+                Root = Math.Pow(-1, n) * ((double)1 / (n + 1));
 
                 n++;
             }
