@@ -11,7 +11,7 @@ namespace YaP_LR_01C
         }
 
         //функция вызываемая при нажатии на кнопку расчёта
-        private void buttonCalculate_Click(object sender, EventArgs e)
+        private void button1Calculate_Click(object sender, EventArgs e)
         {
             double x, y, a, b, z;
 
@@ -104,7 +104,7 @@ namespace YaP_LR_01C
         }
 
         //функция вызываемая при нажатии на кнопку выхода
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void button2Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

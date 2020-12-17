@@ -51,7 +51,7 @@
             this.button1Calculate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button1Calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1Calculate.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1Calculate.Location = new System.Drawing.Point(25, 165);
+            this.button1Calculate.Location = new System.Drawing.Point(30, 165);
             this.button1Calculate.Margin = new System.Windows.Forms.Padding(4);
             this.button1Calculate.Name = "button1Calculate";
             this.button1Calculate.Size = new System.Drawing.Size(100, 50);
@@ -76,7 +76,7 @@
             // label1ApproximateRoot
             // 
             this.label1ApproximateRoot.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1ApproximateRoot.Location = new System.Drawing.Point(420, 30);
+            this.label1ApproximateRoot.Location = new System.Drawing.Point(425, 30);
             this.label1ApproximateRoot.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1ApproximateRoot.Name = "label1ApproximateRoot";
             this.label1ApproximateRoot.Size = new System.Drawing.Size(175, 24);
@@ -87,7 +87,7 @@
             // label2Iteration
             // 
             this.label2Iteration.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2Iteration.Location = new System.Drawing.Point(335, 30);
+            this.label2Iteration.Location = new System.Drawing.Point(340, 30);
             this.label2Iteration.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2Iteration.Name = "label2Iteration";
             this.label2Iteration.Size = new System.Drawing.Size(80, 24);
@@ -113,7 +113,7 @@
             this.textBox1E.BackColor = System.Drawing.Color.DarkGray;
             this.textBox1E.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1E.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1E.Location = new System.Drawing.Point(70, 73);
+            this.textBox1E.Location = new System.Drawing.Point(75, 73);
             this.textBox1E.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1E.Name = "textBox1E";
             this.textBox1E.Size = new System.Drawing.Size(155, 20);
@@ -122,7 +122,7 @@
             // label3E
             // 
             this.label3E.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3E.Location = new System.Drawing.Point(45, 70);
+            this.label3E.Location = new System.Drawing.Point(50, 70);
             this.label3E.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3E.Name = "label3E";
             this.label3E.Size = new System.Drawing.Size(20, 24);
@@ -133,7 +133,7 @@
             // label4X
             // 
             this.label4X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4X.Location = new System.Drawing.Point(45, 100);
+            this.label4X.Location = new System.Drawing.Point(50, 100);
             this.label4X.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4X.Name = "label4X";
             this.label4X.Size = new System.Drawing.Size(20, 24);
@@ -146,7 +146,7 @@
             this.textBox2X.BackColor = System.Drawing.Color.DarkGray;
             this.textBox2X.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2X.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2X.Location = new System.Drawing.Point(70, 103);
+            this.textBox2X.Location = new System.Drawing.Point(75, 103);
             this.textBox2X.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2X.Name = "textBox2X";
             this.textBox2X.Size = new System.Drawing.Size(155, 20);
@@ -160,7 +160,7 @@
             this.button2Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button2Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2Exit.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2Exit.Location = new System.Drawing.Point(135, 165);
+            this.button2Exit.Location = new System.Drawing.Point(140, 165);
             this.button2Exit.Margin = new System.Windows.Forms.Padding(4);
             this.button2Exit.Name = "button2Exit";
             this.button2Exit.Size = new System.Drawing.Size(100, 50);
@@ -175,17 +175,17 @@
             this.label8T.Location = new System.Drawing.Point(5, 5);
             this.label8T.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8T.Name = "label8T";
-            this.label8T.Size = new System.Drawing.Size(630, 24);
+            this.label8T.Size = new System.Drawing.Size(640, 24);
             this.label8T.TabIndex = 17;
-            this.label8T.Text = "Вычисление приближенного корня ln(x+1) с точностью до ε используя разложение в ря" +
-    "д";
+            this.label8T.Text = "Вычислить те члены заданной последовательности значения которох по модулю больше " +
+    "ε";
             // 
             // panel1ListBox
             // 
             this.panel1ListBox.BackColor = System.Drawing.Color.Gray;
             this.panel1ListBox.Controls.Add(this.listBox2Iteration);
             this.panel1ListBox.Controls.Add(this.listBox1ApproximateRoot);
-            this.panel1ListBox.Location = new System.Drawing.Point(330, 60);
+            this.panel1ListBox.Location = new System.Drawing.Point(335, 60);
             this.panel1ListBox.Name = "panel1ListBox";
             this.panel1ListBox.Size = new System.Drawing.Size(295, 316);
             this.panel1ListBox.TabIndex = 18;
@@ -195,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(639, 391);
+            this.ClientSize = new System.Drawing.Size(649, 396);
             this.Controls.Add(this.panel1ListBox);
             this.Controls.Add(this.label8T);
             this.Controls.Add(this.button2Exit);

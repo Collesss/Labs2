@@ -31,7 +31,7 @@ namespace YaP_LR_03S
         public void OutputListBox(int iteration, double root)
         {
             listBox2Iteration.Items.Add(iteration.ToString());
-            listBox1ApproximateRoot.Items.Add(approximateRoot.ToString("F9"));
+            listBox1ApproximateRoot.Items.Add(root.ToString("F9"));
         }
 
         //функция ввода начального x и точности e

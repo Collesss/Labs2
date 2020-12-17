@@ -193,13 +193,13 @@ namespace YaP_Kursovaya_rabota_C
             // label11Count
             // 
             this.label11Count.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11Count.Location = new System.Drawing.Point(460, 420);
+            this.label11Count.Location = new System.Drawing.Point(509, 416);
             this.label11Count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11Count.Name = "label11Count";
-            this.label11Count.Size = new System.Drawing.Size(300, 24);
+            this.label11Count.Size = new System.Drawing.Size(251, 38);
             this.label11Count.TabIndex = 10;
-            this.label11Count.Text = "Количество элементов в новом массиве";
-            this.label11Count.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label11Count.Text = "Количество заменёных элементов в новом массиве";
+            this.label11Count.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox4Count
             // 
@@ -260,7 +260,7 @@ namespace YaP_Kursovaya_rabota_C
             this.label3Text.Location = new System.Drawing.Point(220, 55);
             this.label3Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3Text.Name = "label3Text";
-            this.label3Text.Size = new System.Drawing.Size(630, 60);
+            this.label3Text.Size = new System.Drawing.Size(657, 60);
             this.label3Text.TabIndex = 14;
             this.label3Text.Text = resources.GetString("label3Text.Text");
             this.label3Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
