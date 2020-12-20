@@ -72,7 +72,7 @@ namespace YaP_LR_03S
         //
         private double Func(double x, int n)
         {
-            return Math.Pow(x, n)*Fac(n);
+            return Math.Pow(x, n)/Fac(n);
         }
 
         //функция вычисляющая факториал

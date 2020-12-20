@@ -18,7 +18,7 @@ namespace YaP_LR_02_C
         }
 
         //функция вызываемая при нажатии на кнопку
-        private void buttonCalculate_Click(object sender, EventArgs e)
+        private void button1Calculate_Click(object sender, EventArgs e)
         {
             double a, b, h, max;
             int n;
@@ -42,7 +42,7 @@ namespace YaP_LR_02_C
         private void Output(int n, double max)
         {
             textBox4N.Text = n.ToString();
-            textBox5Max.Text = max.ToString("F2");
+            textBox5M.Text = max.ToString("F2");
         }
 
         //функция вывода аргумента и значения функции в два ListBox
@@ -88,7 +88,7 @@ namespace YaP_LR_02_C
         }
 
         //функция вызываемая при нажатии на кнопку выхода
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void button2Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

@@ -34,19 +34,21 @@ namespace YaP_Kursovaya_rabota_C
             }
 
             double avg;
+            int countReplace;
 
-            Calculate(nums, out avg);
+            Calculate(nums, out avg, out countReplace);
 
-            Output(nums.Length, avg);
+            Output(avg, countReplace);
         }
 
 
         //функция расчитывающая среднее арифметическое массива и выводящая элементы массива которые меньше среднего арифметического в ListBox
-        private void Calculate(double[] nums, out double avgPositive)
+        private void Calculate(double[] nums, out double avgPositive, out int countReplace)
         {
             listBox2Output.Items.Clear();
 
             avgPositive = 0;
+            countReplace = 0;
 
             int countAvgPositive = 0;
 
@@ -61,7 +63,10 @@ namespace YaP_Kursovaya_rabota_C
 
             for (int i = 0; i < nums.Length; i++)
                 if (nums[i] > avgPositive)
+                {
                     listBox2Output.Items.Add(avgPositive.ToString("F2"));
+                    countReplace++;
+                }
                 else
                     listBox2Output.Items.Add(nums[i].ToString("F2"));
         }
@@ -78,10 +83,10 @@ namespace YaP_Kursovaya_rabota_C
         }
 
         //функция вывода
-        private void Output(int count, double avg)
+        private void Output(double avg, int countReplace)
         {
             textBox3Avg.Text = avg.ToString("F2");
-            textBox4Count.Text = count.ToString();
+            textBox4Count.Text = countReplace.ToString();
         }
 
         //функция вызываемая при загрузке формы
@@ -163,6 +168,7 @@ namespace YaP_Kursovaya_rabota_C
         private void button1Add_Click(object sender, EventArgs e)
         {
             listBox1Input.Items.Add(textBox1Num.Text);
+            textBox1Num.Text = "";
         }
         
         //функция вызываемая при нажатии на кнопку выхода

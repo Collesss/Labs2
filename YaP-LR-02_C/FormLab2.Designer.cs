@@ -42,7 +42,7 @@
             this.label6N = new System.Windows.Forms.Label();
             this.textBox4N = new System.Windows.Forms.TextBox();
             this.label7M = new System.Windows.Forms.Label();
-            this.textBox5Max = new System.Windows.Forms.TextBox();
+            this.textBox5M = new System.Windows.Forms.TextBox();
             this.label9F = new System.Windows.Forms.Label();
             this.listBox1ArgX = new System.Windows.Forms.ListBox();
             this.label2Func = new System.Windows.Forms.Label();
@@ -101,7 +101,7 @@
             this.button1Calculate.TabIndex = 4;
             this.button1Calculate.Text = "Вычислить";
             this.button1Calculate.UseVisualStyleBackColor = false;
-            this.button1Calculate.Click += new System.EventHandler(this.buttonCalculate_Click);
+            this.button1Calculate.Click += new System.EventHandler(this.button1Calculate_Click);
             // 
             // button2Exit
             // 
@@ -118,7 +118,7 @@
             this.button2Exit.TabIndex = 5;
             this.button2Exit.Text = "Выход";
             this.button2Exit.UseVisualStyleBackColor = false;
-            this.button2Exit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.button2Exit.Click += new System.EventHandler(this.button2Exit_Click);
             // 
             // label3A
             // 
@@ -221,17 +221,17 @@
             this.label7M.Text = "Максимальное значение функции";
             this.label7M.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox5Max
+            // textBox5M
             // 
-            this.textBox5Max.BackColor = System.Drawing.Color.LightGray;
-            this.textBox5Max.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5Max.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5Max.Location = new System.Drawing.Point(515, 320);
-            this.textBox5Max.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5Max.Name = "textBox5Max";
-            this.textBox5Max.ReadOnly = true;
-            this.textBox5Max.Size = new System.Drawing.Size(155, 20);
-            this.textBox5Max.TabIndex = 7;
+            this.textBox5M.BackColor = System.Drawing.Color.LightGray;
+            this.textBox5M.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5M.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox5M.Location = new System.Drawing.Point(515, 320);
+            this.textBox5M.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox5M.Name = "textBox5M";
+            this.textBox5M.ReadOnly = true;
+            this.textBox5M.Size = new System.Drawing.Size(155, 20);
+            this.textBox5M.TabIndex = 7;
             // 
             // label9F
             // 
@@ -290,7 +290,7 @@
             this.Controls.Add(this.label2Func);
             this.Controls.Add(this.label9F);
             this.Controls.Add(this.label7M);
-            this.Controls.Add(this.textBox5Max);
+            this.Controls.Add(this.textBox5M);
             this.Controls.Add(this.label6N);
             this.Controls.Add(this.textBox4N);
             this.Controls.Add(this.label5H);
@@ -329,7 +329,7 @@
         private System.Windows.Forms.Label label6N;
         private System.Windows.Forms.TextBox textBox4N;
         private System.Windows.Forms.Label label7M;
-        private System.Windows.Forms.TextBox textBox5Max;
+        private System.Windows.Forms.TextBox textBox5M;
         private System.Windows.Forms.Label label9F;
         private System.Windows.Forms.ListBox listBox1ArgX;
         private System.Windows.Forms.Label label2Func;
