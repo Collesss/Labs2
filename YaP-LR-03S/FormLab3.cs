@@ -69,7 +69,7 @@ namespace YaP_LR_03S
 
         }
 
-        //
+        //функция вычисляющая значение функции
         private double Func(double x, int n)
         {
             return Math.Pow(x, n)/Fac(n);
