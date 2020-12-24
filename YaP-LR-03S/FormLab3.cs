@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace YaP_LR_03S
@@ -63,27 +56,10 @@ namespace YaP_LR_03S
 
                 n++;
 
-                Root = Func(x, n);
+                Root *= x / n;
             }
             while (Math.Abs(Root) > e);
 
-        }
-
-        //функция вычисляющая значение функции
-        private double Func(double x, int n)
-        {
-            return Math.Pow(x, n)/Fac(n);
-        }
-
-        //функция вычисляющая факториал
-        private int Fac(int n)
-        {
-            int N = 1;
-
-            for (int i = 2; i <= n; i++)
-                N *= i;
-
-            return N;
         }
 
         //функция вызываемая при нажатии на кнопку выхода
