@@ -13,16 +13,14 @@ namespace YaP_LR_01C
         //функция вызываемая при нажатии на кнопку расчёта
         private void button1Calculate_Click(object sender, EventArgs e)
         {
-            double x, y, a, b, z;
+            double x, a, y;
 
             x = InputX();
-            y = InputY();
             a = InputA();
-            b = InputB();
 
-            z = Calculate(x, y, a, b);
+            y = Calculate(x, a);
 
-            Output(z);
+            Output(y);
         }
 
         //функция ввода X
@@ -31,76 +29,58 @@ namespace YaP_LR_01C
             return double.Parse(textBox1X.Text);
         }
 
-        //функция ввода Y
-        private double InputY()
-        {
-            return double.Parse(textBox2Y .Text);
-        }
-
         //функция ввода A
         private double InputA()
         {
             return double.Parse(textBox3A.Text);
         }
 
-        //функция ввода B
-        private double InputB()
-        {
-            return double.Parse(textBox4B.Text);
-        }
-
         //функция вывода
-        private void Output(double z)
+        private void Output(double y)
         {
-            textBox5Z.Text = z.ToString();
+            textBox5Z.Text = y.ToString();
         }
 
         //функция расчёта условной функции
-        private double Calculate(double x, double y, double a, double b)
+        private double Calculate(double x, double a)
         {
-            double z;
+            double y;
 
-            double xy = x * y;
-
-            if (xy > 0)
-                z = 1 - Math.Pow(Math.E, xy + a * b);
-            else if (xy < 0)
+            if (a > x)
             {
-                double x3, ey, sqrtAbsLnY2;
+                double sqrtAbsCosax, sin2x;
 
-                x3 = Math.Pow(x, 3);
+                sqrtAbsCosax = Math.Sqrt(Math.Abs(Math.Cos(a * x)));
+                sin2x = Math.Pow(Math.Sin(x), 2);
 
-                ey = Math.Pow(Math.E, y);
-
-                sqrtAbsLnY2 = Math.Sqrt(Math.Abs(Math.Log(Math.Pow(y, 2))));
-
-                double max;
-
-                if (x3 > ey)
-                    max = x3;
+                if (sqrtAbsCosax < sin2x)
+                    y = sqrtAbsCosax;
                 else
-                    max = ey;
+                    y = sin2x;
 
-                if (max > sqrtAbsLnY2)
-                    z = max;
-                else
-                    z = sqrtAbsLnY2;
             }
+            else if (a < x)
+                y = Math.Pow(Math.E, x + a);
             else
             {
-                double min, ax;
+                double aPx, sqrtAbsx, ax, max;
 
+                aPx = a + x;
+                sqrtAbsx = Math.Sqrt(Math.Abs(x));
                 ax = a * x;
 
-                if (ax < y)
-                    min = ax;
+                if (aPx > ax)
+                    max = aPx;
                 else
-                    min = y;
+                    max = ax;
 
-                z = b - min;
+                if (max > sqrtAbsx)
+                    y = max;
+                else
+                    y = sqrtAbsx;
             }
 
-            return z;
+            return y;
         }
 
         //функция вызываемая при нажатии на кнопку выхода
