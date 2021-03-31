@@ -265,9 +265,9 @@
             this.label2Func.Location = new System.Drawing.Point(290, 0);
             this.label2Func.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2Func.Name = "label2Func";
-            this.label2Func.Size = new System.Drawing.Size(130, 72);
+            this.label2Func.Size = new System.Drawing.Size(150, 72);
             this.label2Func.TabIndex = 12;
-            this.label2Func.Text = "y=3cos²(2x+1)";
+            this.label2Func.Text = "y=5*sin(2x+1)⁴-cos(x)";
             this.label2Func.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1ListBox
