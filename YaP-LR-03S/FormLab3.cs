@@ -13,11 +13,16 @@ namespace YaP_LR_03S
         //функция вызываемая при нажатии на кнопку
         private void button1Calculate_Click(object sender, EventArgs e)
         {
-            double E, X;
+            double E = Input();
 
-            Input(out X, out E);
+            Calculate(E);
+        }
 
-            Calculate(X, E);
+        //функция вывода X вычисленного стандартной функцией C# и приближённой рекуретной формулой, а так же разницы между этими значениями
+        public void Output(double ApproximateX)
+        {
+            textBox2ApproximateX.Text = ApproximateX.ToString("F9");
+            textBox2DeltaX.Text = Math.Abs(1/(double)3 - ApproximateX).ToString("F9");
         }
 
         //функция вывода номера итерации и значения приближённого корня в два ListBox
@@ -28,10 +33,9 @@ namespace YaP_LR_03S
         }
 
         //функция ввода начального x и точности e
-        public void Input(out double x, out double e)
+        public double Input()
         {
-            x = double.Parse(textBox2X.Text);
-            e = double.Parse(textBox1E.Text);
+            return double.Parse(textBox1E.Text);
         }
 
         //функция очистки списков
@@ -42,24 +46,29 @@ namespace YaP_LR_03S
         }
 
         //функция вычисления суммы значений рекурентной формулы с точностью e
-        private void Calculate(double x, double e)
+        private void Calculate(double e)
         {
             Clear();
 
             int n = 1;
 
-            double Root = x;
+            double Root = 0;
+
+            double ApproximateRoot = 0;
 
             do
             {
-                OutputListBox(n, Root);
+                ApproximateRoot += Root;
+
+                OutputListBox(n, ApproximateRoot);
 
                 n++;
 
-                Root *= x / n;
+                Root = 1 / (double)(n * (n + 2));
             }
             while (Math.Abs(Root) > e);
 
+            Output(ApproximateRoot);
         }
 
         //функция вызываемая при нажатии на кнопку выхода

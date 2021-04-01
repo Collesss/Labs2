@@ -35,11 +35,13 @@
             this.listBox2Iteration = new System.Windows.Forms.ListBox();
             this.textBox1E = new System.Windows.Forms.TextBox();
             this.label3E = new System.Windows.Forms.Label();
-            this.label4X = new System.Windows.Forms.Label();
-            this.textBox2X = new System.Windows.Forms.TextBox();
             this.button2Exit = new System.Windows.Forms.Button();
             this.label8T = new System.Windows.Forms.Label();
             this.panel1ListBox = new System.Windows.Forms.Panel();
+            this.label2DeltaX = new System.Windows.Forms.Label();
+            this.textBox2DeltaX = new System.Windows.Forms.TextBox();
+            this.label2ApproximateX = new System.Windows.Forms.Label();
+            this.textBox2ApproximateX = new System.Windows.Forms.TextBox();
             this.panel1ListBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,28 +132,6 @@
             this.label3E.Text = "E";
             this.label3E.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label4X
-            // 
-            this.label4X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4X.Location = new System.Drawing.Point(50, 100);
-            this.label4X.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4X.Name = "label4X";
-            this.label4X.Size = new System.Drawing.Size(20, 24);
-            this.label4X.TabIndex = 13;
-            this.label4X.Text = "X";
-            this.label4X.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox2X
-            // 
-            this.textBox2X.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox2X.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2X.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2X.Location = new System.Drawing.Point(75, 103);
-            this.textBox2X.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2X.Name = "textBox2X";
-            this.textBox2X.Size = new System.Drawing.Size(155, 20);
-            this.textBox2X.TabIndex = 2;
-            // 
             // button2Exit
             // 
             this.button2Exit.BackColor = System.Drawing.Color.DarkGray;
@@ -190,17 +170,63 @@
             this.panel1ListBox.Size = new System.Drawing.Size(295, 316);
             this.panel1ListBox.TabIndex = 18;
             // 
+            // label2DeltaX
+            // 
+            this.label2DeltaX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2DeltaX.Location = new System.Drawing.Point(40, 351);
+            this.label2DeltaX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2DeltaX.Name = "label2DeltaX";
+            this.label2DeltaX.Size = new System.Drawing.Size(30, 24);
+            this.label2DeltaX.TabIndex = 22;
+            this.label2DeltaX.Text = "ΔX";
+            this.label2DeltaX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox2DeltaX
+            // 
+            this.textBox2DeltaX.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox2DeltaX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2DeltaX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2DeltaX.Location = new System.Drawing.Point(75, 351);
+            this.textBox2DeltaX.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2DeltaX.Name = "textBox2DeltaX";
+            this.textBox2DeltaX.Size = new System.Drawing.Size(155, 20);
+            this.textBox2DeltaX.TabIndex = 20;
+            // 
+            // label2ApproximateX
+            // 
+            this.label2ApproximateX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2ApproximateX.Location = new System.Drawing.Point(40, 317);
+            this.label2ApproximateX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2ApproximateX.Name = "label2ApproximateX";
+            this.label2ApproximateX.Size = new System.Drawing.Size(30, 24);
+            this.label2ApproximateX.TabIndex = 21;
+            this.label2ApproximateX.Text = "≈X";
+            this.label2ApproximateX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox2ApproximateX
+            // 
+            this.textBox2ApproximateX.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox2ApproximateX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2ApproximateX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2ApproximateX.Location = new System.Drawing.Point(75, 321);
+            this.textBox2ApproximateX.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2ApproximateX.Name = "textBox2ApproximateX";
+            this.textBox2ApproximateX.Size = new System.Drawing.Size(155, 20);
+            this.textBox2ApproximateX.TabIndex = 19;
+            // 
             // FormLab3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(649, 396);
+            this.Controls.Add(this.label2DeltaX);
+            this.Controls.Add(this.textBox2DeltaX);
+            this.Controls.Add(this.label2ApproximateX);
+            this.Controls.Add(this.textBox2ApproximateX);
             this.Controls.Add(this.panel1ListBox);
             this.Controls.Add(this.label8T);
             this.Controls.Add(this.button2Exit);
-            this.Controls.Add(this.label4X);
-            this.Controls.Add(this.textBox2X);
             this.Controls.Add(this.label3E);
             this.Controls.Add(this.textBox1E);
             this.Controls.Add(this.label2Iteration);
@@ -225,11 +251,13 @@
         private System.Windows.Forms.ListBox listBox2Iteration;
         private System.Windows.Forms.TextBox textBox1E;
         private System.Windows.Forms.Label label3E;
-        private System.Windows.Forms.Label label4X;
-        private System.Windows.Forms.TextBox textBox2X;
         private System.Windows.Forms.Button button2Exit;
         private System.Windows.Forms.Label label8T;
         private System.Windows.Forms.Panel panel1ListBox;
+        private System.Windows.Forms.Label label2DeltaX;
+        private System.Windows.Forms.TextBox textBox2DeltaX;
+        private System.Windows.Forms.Label label2ApproximateX;
+        private System.Windows.Forms.TextBox textBox2ApproximateX;
     }
 }
 
