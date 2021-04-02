@@ -57,7 +57,6 @@ namespace YaP_LR_01C
                     y = sqrtAbsCosax;
                 else
                     y = sin2x;
-
             }
             else if (a < x)
                 y = Math.Pow(Math.E, x + a);

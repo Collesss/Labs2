@@ -29,7 +29,6 @@ namespace YaP_Kursovaya_rabota_C
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCourseWork));
             this.listBox1Input = new System.Windows.Forms.ListBox();
             this.textBox1Num = new System.Windows.Forms.TextBox();
             this.label4Num = new System.Windows.Forms.Label();
@@ -37,8 +36,6 @@ namespace YaP_Kursovaya_rabota_C
             this.listBox2Output = new System.Windows.Forms.ListBox();
             this.button4ClearList = new System.Windows.Forms.Button();
             this.button4Exit = new System.Windows.Forms.Button();
-            this.label10Avg = new System.Windows.Forms.Label();
-            this.textBox3Avg = new System.Windows.Forms.TextBox();
             this.label11Count = new System.Windows.Forms.Label();
             this.textBox4Count = new System.Windows.Forms.TextBox();
             this.button1Add = new System.Windows.Forms.Button();
@@ -167,38 +164,15 @@ namespace YaP_Kursovaya_rabota_C
             this.button4Exit.UseVisualStyleBackColor = false;
             this.button4Exit.Click += new System.EventHandler(this.button5Exit_Click);
             // 
-            // label10Avg
-            // 
-            this.label10Avg.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10Avg.Location = new System.Drawing.Point(13, 416);
-            this.label10Avg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10Avg.Name = "label10Avg";
-            this.label10Avg.Size = new System.Drawing.Size(267, 38);
-            this.label10Avg.TabIndex = 8;
-            this.label10Avg.Text = "Средее арифмитическое положительных элементов массива";
-            this.label10Avg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox3Avg
-            // 
-            this.textBox3Avg.BackColor = System.Drawing.Color.LightGray;
-            this.textBox3Avg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3Avg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3Avg.Location = new System.Drawing.Point(295, 423);
-            this.textBox3Avg.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3Avg.Name = "textBox3Avg";
-            this.textBox3Avg.ReadOnly = true;
-            this.textBox3Avg.Size = new System.Drawing.Size(155, 20);
-            this.textBox3Avg.TabIndex = 7;
-            // 
             // label11Count
             // 
             this.label11Count.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11Count.Location = new System.Drawing.Point(509, 416);
+            this.label11Count.Location = new System.Drawing.Point(255, 414);
             this.label11Count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11Count.Name = "label11Count";
-            this.label11Count.Size = new System.Drawing.Size(251, 38);
+            this.label11Count.Size = new System.Drawing.Size(310, 38);
             this.label11Count.TabIndex = 10;
-            this.label11Count.Text = "Количество заменёных элементов в новом массиве";
+            this.label11Count.Text = "Количество  элементов в новом массиве";
             this.label11Count.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox4Count
@@ -206,7 +180,7 @@ namespace YaP_Kursovaya_rabota_C
             this.textBox4Count.BackColor = System.Drawing.Color.LightGray;
             this.textBox4Count.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4Count.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4Count.Location = new System.Drawing.Point(765, 423);
+            this.textBox4Count.Location = new System.Drawing.Point(570, 421);
             this.textBox4Count.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4Count.Name = "textBox4Count";
             this.textBox4Count.ReadOnly = true;
@@ -260,9 +234,11 @@ namespace YaP_Kursovaya_rabota_C
             this.label3Text.Location = new System.Drawing.Point(220, 55);
             this.label3Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3Text.Name = "label3Text";
-            this.label3Text.Size = new System.Drawing.Size(657, 60);
+            this.label3Text.Size = new System.Drawing.Size(700, 60);
             this.label3Text.TabIndex = 14;
-            this.label3Text.Text = resources.GetString("label3Text.Text");
+            this.label3Text.Text = "Ввести одномерный массив и сформировать из него новый массив, элементами которого" +
+    " будут являться отрицательные элементы исходного массива, и упорядочить его по в" +
+    "озрастанию.";
             this.label3Text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8InputArray
@@ -421,8 +397,6 @@ namespace YaP_Kursovaya_rabota_C
             this.Controls.Add(this.label1TextBlue);
             this.Controls.Add(this.label11Count);
             this.Controls.Add(this.textBox4Count);
-            this.Controls.Add(this.label10Avg);
-            this.Controls.Add(this.textBox3Avg);
             this.Controls.Add(this.button4Exit);
             this.Controls.Add(this.button4ClearList);
             this.Controls.Add(this.listBox2Output);
@@ -452,8 +426,6 @@ namespace YaP_Kursovaya_rabota_C
         private System.Windows.Forms.ListBox listBox2Output;
         private System.Windows.Forms.Button button4ClearList;
         private System.Windows.Forms.Button button4Exit;
-        private System.Windows.Forms.Label label10Avg;
-        private System.Windows.Forms.TextBox textBox3Avg;
         private System.Windows.Forms.Label label11Count;
         private System.Windows.Forms.TextBox textBox4Count;
         private System.Windows.Forms.Button button1Add;

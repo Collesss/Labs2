@@ -26,42 +26,27 @@ namespace YaP_Kursovaya_rabota_C
                     break;
             }
 
-            double avg;
-            int countReplace;
+            int count;
 
-            Calculate(nums, out avg, out countReplace);
+            Calculate(nums, out count);
 
-            Output(avg, countReplace);
+            Output(count);
         }
 
 
         //функция расчитывающая среднее арифметическое массива и выводящая элементы массива которые меньше среднего арифметического в ListBox
-        private void Calculate(double[] nums, out double avgPositive, out int countReplace)
+        private void Calculate(double[] nums, out int count)
         {
             listBox2Output.Items.Clear();
 
-            avgPositive = 0;
-            countReplace = 0;
-
-            int countAvgPositive = 0;
+            count = 0;
 
             for (int i = 0; i < nums.Length; i++)
-                if (nums[i] > 0)
+                if (nums[i] < 0)
                 {
-                    avgPositive += nums[i];
-                    countAvgPositive++;
-                }
-
-            avgPositive /= countAvgPositive;
-
-            for (int i = 0; i < nums.Length; i++)
-                if (nums[i] > avgPositive)
-                {
-                    listBox2Output.Items.Add(avgPositive.ToString("F2"));
-                    countReplace++;
-                }
-                else
                     listBox2Output.Items.Add(nums[i].ToString("F2"));
+                    count++;
+                }
         }
 
         //функция ввода
@@ -76,9 +61,8 @@ namespace YaP_Kursovaya_rabota_C
         }
 
         //функция вывода
-        private void Output(double avg, int countReplace)
+        private void Output(int countReplace)
         {
-            textBox3Avg.Text = avg.ToString("F2");
             textBox4Count.Text = countReplace.ToString();
         }
 
