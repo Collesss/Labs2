@@ -77,7 +77,7 @@ namespace YaP_LR_02_C
         //функция расчёта значения функции по указанному аргументу x
         private double Func(double x)
         {
-            return Math.Sin(Math.Pow(2 * x + 1, 4)) - Math.Cos(x);
+            return 5 * Math.Sin(Math.Pow(2 * x + 1, 4)) - Math.Cos(x);
         }
 
         //функция вызываемая при нажатии на кнопку выхода

@@ -52,7 +52,7 @@ namespace YaP_LR_03S
 
             int n = 1;
 
-            double Root = 0;
+            double Root = 1 / (double)3;
 
             double ApproximateRoot = 0;
 
@@ -60,7 +60,7 @@ namespace YaP_LR_03S
             {
                 ApproximateRoot += Root;
 
-                OutputListBox(n, ApproximateRoot);
+                OutputListBox(n, Root);
 
                 n++;
 

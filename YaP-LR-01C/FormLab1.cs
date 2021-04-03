@@ -32,13 +32,13 @@ namespace YaP_LR_01C
         //функция ввода A
         private double InputA()
         {
-            return double.Parse(textBox3A.Text);
+            return double.Parse(textBox2A.Text);
         }
 
         //функция вывода
         private void Output(double y)
         {
-            textBox5Z.Text = y.ToString();
+            textBox3Y.Text = y.ToString();
         }
 
         //функция расчёта условной функции
@@ -59,8 +59,6 @@ namespace YaP_LR_01C
                     y = sin2x;
             }
             else if (a < x)
-                y = Math.Pow(Math.E, x + a);
-            else
             {
                 double aPx, sqrtAbsx, ax, max;
 
@@ -78,6 +76,8 @@ namespace YaP_LR_01C
                 else
                     y = sqrtAbsx;
             }
+            else
+                y = Math.Pow(Math.E, x * a);
 
             return y;
         }

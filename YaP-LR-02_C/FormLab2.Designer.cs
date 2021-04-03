@@ -267,7 +267,7 @@
             this.label2Func.Name = "label2Func";
             this.label2Func.Size = new System.Drawing.Size(150, 72);
             this.label2Func.TabIndex = 12;
-            this.label2Func.Text = "y=5*sin(2x+1)⁴-cos(x)";
+            this.label2Func.Text = "y=5sin(2x+1)⁴-cos(x)";
             this.label2Func.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1ListBox

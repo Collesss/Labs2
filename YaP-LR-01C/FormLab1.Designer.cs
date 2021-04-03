@@ -28,42 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7Y = new System.Windows.Forms.Label();
-            this.textBox5Z = new System.Windows.Forms.TextBox();
+            this.label5Y = new System.Windows.Forms.Label();
+            this.textBox3Y = new System.Windows.Forms.TextBox();
             this.button1Calculate = new System.Windows.Forms.Button();
             this.label1Red = new System.Windows.Forms.Label();
             this.label2Text = new System.Windows.Forms.Label();
             this.textBox1X = new System.Windows.Forms.TextBox();
             this.label3X = new System.Windows.Forms.Label();
             this.button2Exit = new System.Windows.Forms.Button();
-            this.textBox3A = new System.Windows.Forms.TextBox();
-            this.label5A = new System.Windows.Forms.Label();
+            this.textBox2A = new System.Windows.Forms.TextBox();
+            this.label4A = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label7Y
+            // label5Y
             // 
-            this.label7Y.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7Y.ForeColor = System.Drawing.Color.Black;
-            this.label7Y.Location = new System.Drawing.Point(100, 90);
-            this.label7Y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7Y.Name = "label7Y";
-            this.label7Y.Size = new System.Drawing.Size(25, 20);
-            this.label7Y.TabIndex = 8;
-            this.label7Y.Text = "y:";
-            this.label7Y.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5Y.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5Y.ForeColor = System.Drawing.Color.Black;
+            this.label5Y.Location = new System.Drawing.Point(100, 90);
+            this.label5Y.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5Y.Name = "label5Y";
+            this.label5Y.Size = new System.Drawing.Size(25, 20);
+            this.label5Y.TabIndex = 8;
+            this.label5Y.Text = "y:";
+            this.label5Y.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox5Z
+            // textBox3Y
             // 
-            this.textBox5Z.BackColor = System.Drawing.Color.LightGray;
-            this.textBox5Z.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5Z.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5Z.ForeColor = System.Drawing.Color.Black;
-            this.textBox5Z.Location = new System.Drawing.Point(130, 90);
-            this.textBox5Z.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5Z.Name = "textBox5Z";
-            this.textBox5Z.ReadOnly = true;
-            this.textBox5Z.Size = new System.Drawing.Size(100, 20);
-            this.textBox5Z.TabIndex = 3;
+            this.textBox3Y.BackColor = System.Drawing.Color.LightGray;
+            this.textBox3Y.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3Y.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3Y.ForeColor = System.Drawing.Color.Black;
+            this.textBox3Y.Location = new System.Drawing.Point(130, 90);
+            this.textBox3Y.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3Y.Name = "textBox3Y";
+            this.textBox3Y.ReadOnly = true;
+            this.textBox3Y.Size = new System.Drawing.Size(100, 20);
+            this.textBox3Y.TabIndex = 3;
             // 
             // button1Calculate
             // 
@@ -150,29 +150,29 @@
             this.button2Exit.UseVisualStyleBackColor = false;
             this.button2Exit.Click += new System.EventHandler(this.button2Exit_Click);
             // 
-            // textBox3A
+            // textBox2A
             // 
-            this.textBox3A.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox3A.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3A.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3A.ForeColor = System.Drawing.Color.Black;
-            this.textBox3A.Location = new System.Drawing.Point(200, 60);
-            this.textBox3A.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3A.Name = "textBox3A";
-            this.textBox3A.Size = new System.Drawing.Size(100, 20);
-            this.textBox3A.TabIndex = 12;
+            this.textBox2A.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox2A.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2A.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2A.ForeColor = System.Drawing.Color.Black;
+            this.textBox2A.Location = new System.Drawing.Point(200, 60);
+            this.textBox2A.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2A.Name = "textBox2A";
+            this.textBox2A.Size = new System.Drawing.Size(100, 20);
+            this.textBox2A.TabIndex = 12;
             // 
-            // label5A
+            // label4A
             // 
-            this.label5A.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5A.ForeColor = System.Drawing.Color.Black;
-            this.label5A.Location = new System.Drawing.Point(170, 60);
-            this.label5A.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5A.Name = "label5A";
-            this.label5A.Size = new System.Drawing.Size(25, 20);
-            this.label5A.TabIndex = 14;
-            this.label5A.Text = "a:";
-            this.label5A.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4A.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4A.ForeColor = System.Drawing.Color.Black;
+            this.label4A.Location = new System.Drawing.Point(170, 60);
+            this.label4A.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4A.Name = "label4A";
+            this.label4A.Size = new System.Drawing.Size(25, 20);
+            this.label4A.TabIndex = 14;
+            this.label4A.Text = "a:";
+            this.label4A.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormLab1
             // 
@@ -180,16 +180,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(574, 131);
-            this.Controls.Add(this.textBox3A);
-            this.Controls.Add(this.label5A);
+            this.Controls.Add(this.textBox2A);
+            this.Controls.Add(this.label4A);
             this.Controls.Add(this.button2Exit);
             this.Controls.Add(this.textBox1X);
             this.Controls.Add(this.label3X);
             this.Controls.Add(this.label2Text);
             this.Controls.Add(this.label1Red);
             this.Controls.Add(this.button1Calculate);
-            this.Controls.Add(this.textBox5Z);
-            this.Controls.Add(this.label7Y);
+            this.Controls.Add(this.textBox3Y);
+            this.Controls.Add(this.label5Y);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -203,16 +203,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label7Y;
-        private System.Windows.Forms.TextBox textBox5Z;
+        private System.Windows.Forms.Label label5Y;
+        private System.Windows.Forms.TextBox textBox3Y;
         private System.Windows.Forms.Button button1Calculate;
         private System.Windows.Forms.Label label1Red;
         private System.Windows.Forms.Label label2Text;
         private System.Windows.Forms.TextBox textBox1X;
         private System.Windows.Forms.Label label3X;
         private System.Windows.Forms.Button button2Exit;
-        private System.Windows.Forms.TextBox textBox3A;
-        private System.Windows.Forms.Label label5A;
+        private System.Windows.Forms.TextBox textBox2A;
+        private System.Windows.Forms.Label label4A;
     }
 }
 
