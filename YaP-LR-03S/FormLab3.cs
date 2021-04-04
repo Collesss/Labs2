@@ -21,8 +21,8 @@ namespace YaP_LR_03S
         //функция вывода X вычисленного стандартной функцией C# и приближённой рекуретной формулой, а так же разницы между этими значениями
         public void Output(double ApproximateX)
         {
-            textBox2ApproximateX.Text = ApproximateX.ToString("F9");
-            textBox2DeltaX.Text = Math.Abs(1/(double)3 - ApproximateX).ToString("F9");
+            textBox3ApproximateX.Text = ApproximateX.ToString("F9");
+            textBox4DeltaX.Text = Math.Abs(0.75 - ApproximateX).ToString("F9");
         }
 
         //функция вывода номера итерации и значения приближённого корня в два ListBox

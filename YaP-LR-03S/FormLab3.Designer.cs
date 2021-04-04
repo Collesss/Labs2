@@ -36,14 +36,14 @@
             this.textBox1E = new System.Windows.Forms.TextBox();
             this.label3E = new System.Windows.Forms.Label();
             this.button2Exit = new System.Windows.Forms.Button();
-            this.label8T = new System.Windows.Forms.Label();
+            this.label7T = new System.Windows.Forms.Label();
             this.panel1ListBox = new System.Windows.Forms.Panel();
-            this.label2DeltaX = new System.Windows.Forms.Label();
-            this.textBox2DeltaX = new System.Windows.Forms.TextBox();
-            this.label2ApproximateX = new System.Windows.Forms.Label();
-            this.textBox2ApproximateX = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6DeltaX = new System.Windows.Forms.Label();
+            this.textBox4DeltaX = new System.Windows.Forms.TextBox();
+            this.label5ApproximateX = new System.Windows.Forms.Label();
+            this.textBox3ApproximateX = new System.Windows.Forms.TextBox();
+            this.label4X = new System.Windows.Forms.Label();
+            this.textBox2X = new System.Windows.Forms.TextBox();
             this.panel1ListBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,16 +151,16 @@
             this.button2Exit.UseVisualStyleBackColor = false;
             this.button2Exit.Click += new System.EventHandler(this.button2Exit_Click);
             // 
-            // label8T
+            // label7T
             // 
-            this.label8T.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8T.Location = new System.Drawing.Point(5, 5);
-            this.label8T.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8T.Name = "label8T";
-            this.label8T.Size = new System.Drawing.Size(640, 24);
-            this.label8T.TabIndex = 17;
-            this.label8T.Text = "Вычислить приближённое значение бесконечной суммы с точность до ε";
-            this.label8T.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7T.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7T.Location = new System.Drawing.Point(5, 5);
+            this.label7T.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7T.Name = "label7T";
+            this.label7T.Size = new System.Drawing.Size(640, 24);
+            this.label7T.TabIndex = 17;
+            this.label7T.Text = "Вычислить приближённое значение бесконечной суммы с точность до ε";
+            this.label7T.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1ListBox
             // 
@@ -172,72 +172,75 @@
             this.panel1ListBox.Size = new System.Drawing.Size(295, 316);
             this.panel1ListBox.TabIndex = 18;
             // 
-            // label2DeltaX
+            // label6DeltaX
             // 
-            this.label2DeltaX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2DeltaX.Location = new System.Drawing.Point(40, 351);
-            this.label2DeltaX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2DeltaX.Name = "label2DeltaX";
-            this.label2DeltaX.Size = new System.Drawing.Size(30, 24);
-            this.label2DeltaX.TabIndex = 22;
-            this.label2DeltaX.Text = "ΔX";
-            this.label2DeltaX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label6DeltaX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6DeltaX.Location = new System.Drawing.Point(40, 351);
+            this.label6DeltaX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6DeltaX.Name = "label6DeltaX";
+            this.label6DeltaX.Size = new System.Drawing.Size(30, 24);
+            this.label6DeltaX.TabIndex = 22;
+            this.label6DeltaX.Text = "ΔX";
+            this.label6DeltaX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2DeltaX
+            // textBox4DeltaX
             // 
-            this.textBox2DeltaX.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox2DeltaX.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2DeltaX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2DeltaX.Location = new System.Drawing.Point(75, 351);
-            this.textBox2DeltaX.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2DeltaX.Name = "textBox2DeltaX";
-            this.textBox2DeltaX.Size = new System.Drawing.Size(155, 20);
-            this.textBox2DeltaX.TabIndex = 20;
+            this.textBox4DeltaX.BackColor = System.Drawing.Color.LightGray;
+            this.textBox4DeltaX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4DeltaX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4DeltaX.Location = new System.Drawing.Point(75, 351);
+            this.textBox4DeltaX.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4DeltaX.Name = "textBox4DeltaX";
+            this.textBox4DeltaX.ReadOnly = true;
+            this.textBox4DeltaX.Size = new System.Drawing.Size(155, 20);
+            this.textBox4DeltaX.TabIndex = 20;
             // 
-            // label2ApproximateX
+            // label5ApproximateX
             // 
-            this.label2ApproximateX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2ApproximateX.Location = new System.Drawing.Point(40, 317);
-            this.label2ApproximateX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2ApproximateX.Name = "label2ApproximateX";
-            this.label2ApproximateX.Size = new System.Drawing.Size(30, 24);
-            this.label2ApproximateX.TabIndex = 21;
-            this.label2ApproximateX.Text = "≈X";
-            this.label2ApproximateX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5ApproximateX.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5ApproximateX.Location = new System.Drawing.Point(40, 317);
+            this.label5ApproximateX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5ApproximateX.Name = "label5ApproximateX";
+            this.label5ApproximateX.Size = new System.Drawing.Size(30, 24);
+            this.label5ApproximateX.TabIndex = 21;
+            this.label5ApproximateX.Text = "≈X";
+            this.label5ApproximateX.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox2ApproximateX
+            // textBox3ApproximateX
             // 
-            this.textBox2ApproximateX.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox2ApproximateX.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2ApproximateX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2ApproximateX.Location = new System.Drawing.Point(75, 321);
-            this.textBox2ApproximateX.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2ApproximateX.Name = "textBox2ApproximateX";
-            this.textBox2ApproximateX.Size = new System.Drawing.Size(155, 20);
-            this.textBox2ApproximateX.TabIndex = 19;
+            this.textBox3ApproximateX.BackColor = System.Drawing.Color.LightGray;
+            this.textBox3ApproximateX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3ApproximateX.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3ApproximateX.Location = new System.Drawing.Point(75, 321);
+            this.textBox3ApproximateX.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3ApproximateX.Name = "textBox3ApproximateX";
+            this.textBox3ApproximateX.ReadOnly = true;
+            this.textBox3ApproximateX.Size = new System.Drawing.Size(155, 20);
+            this.textBox3ApproximateX.TabIndex = 19;
             // 
-            // label1
+            // label4X
             // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(40, 291);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 24);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "X";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label4X.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4X.Location = new System.Drawing.Point(40, 291);
+            this.label4X.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4X.Name = "label4X";
+            this.label4X.Size = new System.Drawing.Size(30, 24);
+            this.label4X.TabIndex = 23;
+            this.label4X.Text = "X";
+            this.label4X.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // textBox2X
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(75, 293);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 20);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "1/3";
+            this.textBox2X.BackColor = System.Drawing.Color.LightGray;
+            this.textBox2X.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2X.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2X.Location = new System.Drawing.Point(75, 293);
+            this.textBox2X.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2X.Name = "textBox2X";
+            this.textBox2X.ReadOnly = true;
+            this.textBox2X.Size = new System.Drawing.Size(155, 20);
+            this.textBox2X.TabIndex = 24;
+            this.textBox2X.Text = "0,75";
             // 
             // FormLab3
             // 
@@ -245,14 +248,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(649, 396);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2DeltaX);
-            this.Controls.Add(this.textBox2DeltaX);
-            this.Controls.Add(this.label2ApproximateX);
-            this.Controls.Add(this.textBox2ApproximateX);
+            this.Controls.Add(this.textBox2X);
+            this.Controls.Add(this.label4X);
+            this.Controls.Add(this.label6DeltaX);
+            this.Controls.Add(this.textBox4DeltaX);
+            this.Controls.Add(this.label5ApproximateX);
+            this.Controls.Add(this.textBox3ApproximateX);
             this.Controls.Add(this.panel1ListBox);
-            this.Controls.Add(this.label8T);
+            this.Controls.Add(this.label7T);
             this.Controls.Add(this.button2Exit);
             this.Controls.Add(this.label3E);
             this.Controls.Add(this.textBox1E);
@@ -279,14 +282,14 @@
         private System.Windows.Forms.TextBox textBox1E;
         private System.Windows.Forms.Label label3E;
         private System.Windows.Forms.Button button2Exit;
-        private System.Windows.Forms.Label label8T;
+        private System.Windows.Forms.Label label7T;
         private System.Windows.Forms.Panel panel1ListBox;
-        private System.Windows.Forms.Label label2DeltaX;
-        private System.Windows.Forms.TextBox textBox2DeltaX;
-        private System.Windows.Forms.Label label2ApproximateX;
-        private System.Windows.Forms.TextBox textBox2ApproximateX;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6DeltaX;
+        private System.Windows.Forms.TextBox textBox4DeltaX;
+        private System.Windows.Forms.Label label5ApproximateX;
+        private System.Windows.Forms.TextBox textBox3ApproximateX;
+        private System.Windows.Forms.Label label4X;
+        private System.Windows.Forms.TextBox textBox2X;
     }
 }
 
